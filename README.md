@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="BlackEagle Logo" width="80%" />
+  <img src="assets/logo.png" alt="BlackEagle Logo" width="50%" />
 </p>
 
 # BlackEagle 🦅
