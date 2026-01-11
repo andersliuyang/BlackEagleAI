@@ -1,11 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="BlackEagle Logo" width="120" />
-</p>
-
-<h1 align="center">BlackEagle</h1>
-
-<p align="center">
-  <strong>Local-first AI Browser Agent for Web Automation & Knowledge Work</strong>
+  <img src="assets/logo.png" alt="BlackEagle Logo" width="80%" />
 </p>
 
 # BlackEagle 🦅
