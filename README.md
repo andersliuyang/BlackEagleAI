@@ -1,4 +1,15 @@
-# BlackEagle 🦅  
+<p align="center">
+  <img src="assets/logo.png" alt="BlackEagle Logo" width="120" />
+</p>
+
+<h1 align="center">BlackEagle</h1>
+
+<p align="center">
+  <strong>Local-first AI Browser Agent for Web Automation & Knowledge Work</strong>
+</p>
+
+# BlackEagle 🦅
+
 **Local-first AI Browser Agent for Web Automation & Knowledge Work**
 
 BlackEagle is a browser extension that turns your browser into a **local AI agent**.
@@ -13,26 +24,31 @@ BlackEagle runs entirely in your browser.
 ## ✨ Key Features
 
 ### 🔍 Read & Understand Web Content
+
 - Analyze full webpages or selected content
 - Extract structured information from complex layouts
 - Understand text, images, and embedded media
 
 ### 🧠 Human-like Browser Interaction
+
 - Open pages, click elements, fill forms
 - Operate dynamic websites
 - Execute multi-step workflows via natural language instructions
 
 ### 📄 Upload & Analyze Documents
+
 - Upload documents (PDF, text files, etc.)
 - Automatically summarize and extract insights
 - Combine document knowledge with live web context
 
 ### 📝 Generate & Export Documents
+
 - Turn AI conversations into structured documents
 - Export results for research, reports, or internal notes
 - Suitable for analysts, writers, and consultants
 
 ### ⏱️ Task Scheduling & Continuous Monitoring
+
 - Create scheduled or rule-based tasks
 - Continuously monitor webpages for changes
 - Automatically analyze updates and generate documents
@@ -43,6 +59,7 @@ BlackEagle runs entirely in your browser.
 ## 🧩 Why BlackEagle?
 
 ### Local-Only by Design
+
 - No backend servers
 - No account required
 - No tracking or analytics
@@ -52,9 +69,11 @@ All webpage content stays in your browser.
 AI requests are sent **directly** to your configured endpoint.
 
 ### Bring Your Own AI
+
 BlackEagle works with any LLM provider that exposes a compatible API endpoint.
 
 Choose models based on:
+
 - Cost
 - Accuracy
 - Speed
@@ -64,11 +83,11 @@ Choose models based on:
 
 ## 🎯 Who Is This For?
 
-- Developers & engineers  
-- Researchers & analysts  
-- Knowledge workers  
-- Automation enthusiasts  
-- Anyone who wants AI to *do work*, not just chat  
+- Developers & engineers
+- Researchers & analysts
+- Knowledge workers
+- Automation enthusiasts
+- Anyone who wants AI to _do work_, not just chat
 
 ---
 
