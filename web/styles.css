@@ -8,6 +8,18 @@
   background: #000;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
+.feature-section h3 {
+  margin: 32px 0 8px;
+}
+.feature-section h3:first-of-type {
+  margin-top: 0;
+}
+.feature-section .desc {
+  margin-bottom: 8px;
+}
+.feature-section .video {
+  margin-bottom: 24px;
+}
 .feature-grid {
   margin-top: 16px;
 }
