@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlackEagle — 你的本地 AI 上网助手</title>
+    <meta name="description" content="BlackEagle 浏览器插件：免费、纯本地、无需服务器、隐私优先。让 AI 像人一样使用浏览器，理解网页并自动完成操作。" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="BlackEagle — 你的本地 AI 上网助手" />
+    <meta property="og:description" content="免费 · 纯本地 · 无需服务器 · 隐私优先。安装即拥有一台个人化的 AI 浏览器。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icon.ico" />
+    <link rel="icon" href="assets/icon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <nav class="top-nav">
+          <a id="nav-features" href="#features">特色</a>
+          <a id="nav-scenes" href="#scenes">场景</a>
+          <a id="nav-download" href="#download" class="btn btn-outline">下载</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="切换语言">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 id="hero-title">你的本地 AI 上网助手</h1>
+          <p id="hero-sub" class="sub">免费 · 纯本地 · 无需服务器 · 隐私优先</p>
+          <p id="hero-desc" class="desc">让 AI 像人一样使用浏览器，理解网页、执行操作。安装即拥有一台个人化的 AI 浏览器。</p>
+          <div class="cta">
+            <a id="cta-chrome" class="btn btn-primary" href="assets/blackeagle%20v0.1.0.0.zip" download="BlackEagle v0.1.0.0.zip" type="application/zip">下载 Chrome 版</a>
+            <a id="cta-edge" class="btn btn-secondary" href="assets/blackeagle%20v0.1.0.0.zip" download="BlackEagle v0.1.0.0.zip" type="application/zip">下载 Edge 版</a>
+          </div>
+          <div class="badges">
+            <span id="badge-1">Local-first</span>
+            <span id="badge-2">多模型接入</span>
+            <span id="badge-3">多模态理解</span>
+          </div>
+          <img class="hero-logo" src="assets/logo.png" alt="BlackEagle Logo" />
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 id="features-title">核心特色</h2>
+          <div class="grid">
+            <div class="card">
+              <h3 id="features-local-title">纯本地运行</h3>
+              <p id="features-local-desc">网页内容与操作不经第三方中转，数据只在你手里。</p>
+            </div>
+            <div class="card">
+              <h3 id="features-free-title">免费，开箱即用</h3>
+              <p id="features-free-desc">安装即可使用基础能力，验证真实场景与价值。</p>
+            </div>
+            <div class="card">
+              <h3 id="features-noserver-title">无需服务器</h3>
+              <p id="features-noserver-desc">不搭后端、不写爬虫，AI 直接在浏览器完成任务。</p>
+            </div>
+            <div class="card">
+              <h3 id="features-model-title">自配模型</h3>
+              <p id="features-model-desc">接入你自己的 LLM Endpoint + API Key，灵活低成本。</p>
+            </div>
+            <div class="card">
+              <h3 id="features-ops-title">理解与操作</h3>
+              <p id="features-ops-desc">读取网页与选中内容，自动点击、填写、跳转，多步骤流程一站完成。</p>
+            </div>
+            <div class="card">
+              <h3 id="features-multimodal-title">多模态支持</h3>
+              <p id="features-multimodal-desc">视频、图片、文档内容自动理解与提炼，生成结构化结果。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scenes" class="section alt">
+        <div class="container">
+          <h2 id="scenes-title">适用场景</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3 id="scenes-research-title">市场调研</h3>
+              <p id="scenes-research-desc">自动打开网站并提取关键信息，竞品价格、功能、公告一键汇总。</p>
+            </div>
+            <div class="card">
+              <h3 id="scenes-content-title">内容创作</h3>
+              <p id="scenes-content-desc">读取参考文章生成原创，多网页合成深度稿，视频图文自动拆解。</p>
+            </div>
+            <div class="card">
+              <h3 id="scenes-commerce-title">电商与运营</h3>
+              <p id="scenes-commerce-desc">分析评论、对比竞品、自动发布；你能点的网页，AI 都能替你点。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section download">
+        <div class="container">
+          <h2 id="download-title">下载与安装</h2>
+          <p id="download-desc" class="desc">BlackEagle 支持 Chrome 与 Edge。当前版本提供 GitHub Releases 下载。</p>
+          <div class="cta">
+            <a id="download-cta-chrome" class="btn btn-primary" href="assets/blackeagle%20v0.1.0.0.zip" download="BlackEagle v0.1.0.0.zip" type="application/zip">下载 Chrome 版</a>
+            <a id="download-cta-edge" class="btn btn-secondary" href="assets/blackeagle%20v0.1.0.0.zip" download="BlackEagle v0.1.0.0.zip" type="application/zip">下载 Edge 版</a>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <strong id="chrome-setup-title">Chrome 安装：</strong>
+              <ol>
+                <li id="chrome-step1">打开 <span class="mono">chrome://extensions</span> 并开启「开发者模式」。</li>
+                <li id="chrome-step2">点击「加载已解压的扩展程序」，选择插件解压后的文件夹。</li>
+              </ol>
+            </div>
+            <div class="step">
+              <strong id="edge-setup-title">Edge 安装：</strong>
+              <ol>
+                <li id="edge-step1">打开 <span class="mono">edge://extensions</span> 并开启「开发人员模式」。</li>
+                <li id="edge-step2">点击「加载已解压的扩展」，选择插件解压后的文件夹。</li>
+              </ol>
+            </div>
+          </div>
+          <p id="tips" class="tips">提示：建议优先使用你自己的 LLM Endpoint + API Key，获得更快、更安全、更个性化的体验。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub 反馈</a>
+        </div>
+      </div>
+    </footer>
+    <script src="i18n.js"></script>
+  </body>
+</html>
