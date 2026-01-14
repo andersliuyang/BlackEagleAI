@@ -264,3 +264,14 @@ body {
     background: rgba(255, 255, 255, 0.7);
   }
 }
+
+/* Tutorial page visuals */
+.screenshot {
+  width: 100%;
+  max-width: 640px;
+  display: block;
+  margin: 6px auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
