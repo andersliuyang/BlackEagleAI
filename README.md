@@ -2,6 +2,8 @@
   <img src="assets/logo.png" alt="BlackEagle Logo" width="50%" />
 </p>
 
+https://blackeagle.cozyai.chat/
+
 # BlackEagle 🦅
 
 **Local-first AI Browser Agent for Web Automation & Knowledge Work**
