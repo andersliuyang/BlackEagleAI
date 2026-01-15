@@ -114,6 +114,7 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
                   title="自动填写与操作网页"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -132,9 +133,11 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
+                  data-youtube="https://www.youtube.com/embed/Mihe8nXUxS8"
                   title="网页难懂内容自动解读"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                   loading="lazy"
                 ></iframe>
@@ -150,6 +153,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
+                  data-youtube="https://www.youtube.com/embed/h-KhNkPeStI"
                   title="自动生成文章并导出"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -168,6 +173,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
+                  data-youtube="https://www.youtube.com/embed/e-2P8f3vbZg"
                   title="本地超大 PDF 总结"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -186,6 +193,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
+                  data-youtube="https://www.youtube.com/embed/tnaK5k8WSF0"
                   title="本地/网页视频读取与总结"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -204,6 +213,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
+                  data-youtube="https://www.youtube.com/embed/ZCxC_cOZwdQ"
                   title="读取与处理邮件"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -222,6 +233,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
+                  data-youtube="https://www.youtube.com/embed/rPDaW34xLuk"
                   title="选中网页内容并解读"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -240,6 +253,8 @@
                 <iframe
                   class="video"
                   src="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
+                  data-youtube="https://www.youtube.com/embed/5MIi5DdOtis"
                   title="任务提醒与待办系统"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -249,6 +264,63 @@
               </div>
             </div>
           </div>
+          <script>
+            (function () {
+              var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[data-bili]"));
+
+              function preferredIsZh() {
+                var saved;
+                try {
+                  saved = localStorage.getItem("beLang");
+                } catch (e) {}
+                var lang = saved || navigator.language || navigator.userLanguage || "";
+                return (lang || "").toLowerCase().indexOf("zh") === 0;
+              }
+
+              function setSource(forceBili) {
+                var prefersCn = preferredIsZh();
+                frames.forEach(function (frame) {
+                  var bili = frame.getAttribute("data-bili");
+                  var yt = frame.getAttribute("data-youtube");
+                  var useBili = forceBili || prefersCn || !yt;
+                  var target = useBili ? bili : yt;
+                  if (target && frame.src !== target) {
+                    frame.src = target;
+                  }
+                });
+              }
+
+              setSource(false);
+
+              var timeout = setTimeout(function () {
+                setSource(true);
+              }, 3000);
+
+              fetch("https://www.youtube.com/generate_204", { mode: "no-cors" })
+                .then(function () {
+                  clearTimeout(timeout);
+                })
+                .catch(function () {
+                  clearTimeout(timeout);
+                  setSource(true);
+                });
+
+              var langToggle = document.getElementById("lang-toggle");
+              if (langToggle) {
+                langToggle.addEventListener("click", function () {
+                  setTimeout(function () {
+                    setSource(false);
+                  }, 0);
+                });
+              }
+
+              window.addEventListener("storage", function (ev) {
+                if (ev.key === "beLang") {
+                  setSource(false);
+                }
+              });
+            })();
+          </script>
         </div>
       </section>
 
