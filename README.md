@@ -2,7 +2,7 @@
   <img src="assets/logo.png" alt="BlackEagle Logo" width="50%" />
 </p>
 
-https://blackeagle.cozyai.chat/
+[text](https://blackeagle.cozyai.chat/)
 
 # BlackEagle 🦅
 
