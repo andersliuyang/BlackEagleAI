@@ -1,6 +1,8 @@
 .video {
   width: 100%;
   max-width: 800px;
+  aspect-ratio: 16 / 9;
+  min-height: 360px;
   display: block;
   margin: 8px auto 16px;
   border: 1px solid var(--border);
