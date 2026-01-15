@@ -2,7 +2,9 @@
   <img src="assets/logo.png" alt="BlackEagle Logo" width="50%" />
 </p>
 
-[BlackEagle Homepage](https://blackeagle.cozyai.chat/)
+[BlackEagle Homepage — Visit for demo videos 🎥](https://blackeagle.cozyai.chat/)
+
+> The homepage contains many demo videos and quick-start examples demonstrating features and workflows. We strongly recommend watching them to learn how to use BlackEagle.
 
 # BlackEagle 🦅
 
