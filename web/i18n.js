@@ -10,7 +10,7 @@
 
   const dict = {
     zh: {
-      "page-title": "BlackEagle — 你的本地 AI 浏览器插件",
+      "page-title": "BlackEagle — 你的私人 AI 浏览器",
       "meta-description": "BlackEagle 浏览器插件：免费、纯本地、无需服务器、隐私优先。让 AI 像人一样使用浏览器，理解网页并自动完成操作。",
       "nav-features": "特色",
       "nav-scenes": "场景",
@@ -102,12 +102,12 @@
       "tutorial-back-home": "返回首页",
     },
     en: {
-      "page-title": "BlackEagle — Your Local AI Browser Extension",
+      "page-title": "BlackEagle — Your Personal AI Browser",
       "meta-description": "BlackEagle extension: Free, local-first, no server, privacy-first. Let AI browse like a human — understand pages and act.",
       "nav-features": "Features",
       "nav-scenes": "Use Cases",
       "nav-download": "Download",
-      "hero-title": "Your Local AI Browser Extension",
+      "hero-title": "Your Personal AI Browser",
       "hero-sub": "Free · Local-first · No server · Privacy-first",
       "hero-desc": "Let AI browse like a human — understand pages and take actions. Install to get your personal AI browser.",
       "cta-chrome": "Download for Chrome",
