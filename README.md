@@ -8,9 +8,9 @@
 
 # BlackEagle 🦅
 
-**Local-first AI Browser Agent for Web Automation & Knowledge Work**
+**Your Personal AI Browser for Web Automation & Knowledge Work**
 
-BlackEagle is a browser extension that turns your browser into a **local AI agent**.
+BlackEagle is a browser extension that turns your browser into **Your Personal AI Browser**.
 
 It can read webpages, interact with websites like a human, analyze uploaded documents, run scheduled tasks, and generate exportable documents — all **without relying on any backend server**.
 
