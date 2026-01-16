@@ -105,3 +105,18 @@ No signup. No server setup.
 BlackEagle operates entirely on the client side.
 
 - Web content is processed locally
+
+---
+
+## Browser extension installation (Chrome / Edge)
+
+BlackEagle currently supports Chrome and Edge only. Firefox is not supported.
+
+Simple install (developer mode):
+
+- Build the extension (from the extension directory): `npm run build:blackeagle`.
+- Open the extensions page in Chrome or Edge (`chrome://extensions/` or `edge://extensions/`).
+- Enable "Developer mode" and click "Load unpacked".
+- Select the build output folder that contains `manifest.json`.
+
+## The extension should load and appear in the browser toolbar.
