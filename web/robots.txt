@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://blackeagle.app887.com/sitemap.xml
+Sitemap: https://blackeagle.cozyai.chat/sitemap.xml
 
 # Generated on 2026-01-17
