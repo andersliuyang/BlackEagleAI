@@ -75,7 +75,19 @@ body {
 }
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    Noto Sans,
+    "Helvetica Neue",
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
   background: radial-gradient(1200px 600px at 20% -10%, #15213c 0%, transparent 60%), radial-gradient(900px 500px at 80% 10%, #0b1c32 0%, transparent 60%), var(--bg);
   color: var(--text);
 }
@@ -122,8 +134,10 @@ body {
   text-decoration: none;
   opacity: 0.9;
 }
-.top-nav a:hover {
+.top-nav a:hover,
+.top-nav a.active {
   opacity: 1;
+  font-weight: 500;
 }
 
 .hero {
@@ -274,6 +288,19 @@ body {
 .tips {
   margin-top: 14px;
   color: var(--muted);
+}
+
+.alert {
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  color: #f59e0b;
+}
+
+.alert strong {
+  color: #d97706;
 }
 
 .site-footer {
