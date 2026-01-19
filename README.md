@@ -119,4 +119,15 @@ Simple install (developer mode):
 - Enable "Developer mode" and click "Load unpacked".
 - Select the build output folder that contains `manifest.json`.
 
+## Large model configuration types
+
+BlackEagle supports multiple categories of large models and will automatically select the most appropriate type for each feature. We recommend configuring endpoints (and API keys) for the model types you plan to use.
+
+- **Chat / LLM**: General-purpose conversational models used for webpage understanding, summarization, reasoning, and text generation.
+- **Document / File Understanding**: Models specialized in parsing long or structured documents (PDFs, long web pages, and uploaded files) and extracting structured information.
+- **Image Generation**: Text-to-image models used to generate illustrations, cover images, charts, and other creative assets from text or webpage content.
+- **Vision / Multimodal**: Models capable of understanding images or video frames and performing multimodal analysis (e.g., extracting visual information, describing images, or combining image+text reasoning).
+
+The extension will route tasks to the appropriate model type (for example, document parsing uses Document models, whereas webpage understanding typically uses Chat/LLM models). For the best experience, configure endpoints for all applicable categories. BlackEagle expects endpoints compatible with the OpenAI-style SDK/interface; models and providers following that convention are supported and will integrate smoothly.
+
 ## The extension should load and appear in the browser toolbar.
