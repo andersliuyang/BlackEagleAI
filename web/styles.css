@@ -54,6 +54,36 @@
 .feature-grid {
   margin-top: 16px;
 }
+.support-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.support-list strong {
+  color: var(--text);
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.support-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.support-card p {
+  margin: 8px 0;
+  color: var(--muted);
+}
+.support-meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 12px;
+}
 * {
   box-sizing: border-box;
 }
