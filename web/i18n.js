@@ -223,6 +223,16 @@
       "blog-post-comic-step3": "步骤三：打开任意网页，插件会自动『读取页面』，并在右下角展示“网页准备好”。",
       "blog-post-comic-step4": "步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，生成结果后会自动弹出保存对话框，选择保存位置后，图片将在新标签页中打开并展示。",
       "blog-post-comic-tips": "提示：你可以补充风格指令（如手绘、简洁线条）或限制角色与场景，让漫画更贴合你的需求。",
+      "blog-post-comic-best-title": "让漫画更好看的 3 个技巧",
+      "blog-post-comic-best-style": "用“角色 + 情绪 + 场景 + 分镜”描述需求，例如：两位同事、轻松、办公室讨论新功能，四宫格、每格一句简短对白。",
+      "blog-post-comic-best-visual": "指定 4 宫格布局、1:1 或 4:3 画幅，台词保持短句，避免长段文字导致画面拥挤。",
+      "blog-post-comic-best-iterate": "先生成草稿，再追加风格（手绘、水彩、赛博感）或光影细节；分两步让 AI 迭代比一次性塞满指令更稳定。",
+      "blog-post-comic-prompt-title": "示例提示词",
+      "blog-post-comic-prompt-desc": "“基于当前网页内容，生成一张 4 宫格漫画。角色保持一致，画面 1:1，线条简洁，风格轻松幽默，每格一句对白，主题围绕页面里的核心观点。”",
+      "blog-post-comic-qa-title": "常见问题排查",
+      "blog-post-comic-qa-readiness": "没看到“网页准备好”？点击插件里的“读取页面”重试，或刷新网页后再试。",
+      "blog-post-comic-qa-save": "生成后未弹出保存对话框？在浏览器允许下载弹窗/新标签页，并确认扩展拥有下载权限。",
+      "blog-post-comic-qa-quality": "画面与网页不符或质量低？检查图片生成模型是否配置成功，尝试更高质量模型，并减少无关指令。",
 
       /* Blog: curation to Notion */
       "blog-post-curation-page-title": "基于大模型的文章编写与采编到 Notion 指南",
@@ -452,6 +462,18 @@
       "blog-post-comic-step4":
         "Step 4: In chat, tell BlackEagleAI: 'Generate a 4‑panel comic based on the current page'. After generation a save dialog will appear; choose a location and the image will open in a new browser tab.",
       "blog-post-comic-tips": "Tip: Add style hints (e.g., hand‑drawn, clean lines) or constrain roles and scenes to better match your needs.",
+      "blog-post-comic-best-title": "3 tips for better comics",
+      "blog-post-comic-best-style":
+        "Frame requests with Characters + Mood + Scene + Panels. Example: two colleagues, relaxed, in an office discussing a new feature, 4 panels, one short line per panel.",
+      "blog-post-comic-best-visual": "Specify 4-panel layout, 1:1 or 4:3 aspect, keep dialogue brief to avoid crowded frames.",
+      "blog-post-comic-best-iterate": "Generate a draft first, then add style (hand‑drawn, watercolor, cyber) or lighting tweaks; iterative steps are steadier than one overloaded prompt.",
+      "blog-post-comic-prompt-title": "Sample prompt",
+      "blog-post-comic-prompt-desc":
+        "“Using the current page content, create a 4-panel comic. Keep characters consistent, canvas 1:1, clean lines, lighthearted tone, one short line per panel, theme anchored on the page’s key idea.”",
+      "blog-post-comic-qa-title": "Troubleshooting",
+      "blog-post-comic-qa-readiness": "Don’t see ‘Page ready’? Hit ‘Read Page’ in the plugin or refresh the webpage and retry.",
+      "blog-post-comic-qa-save": "No save dialog after generation? Allow download popups/new tabs and ensure the extension has download permission.",
+      "blog-post-comic-qa-quality": "Comic mismatches the page or looks low‑quality? Verify the image model is configured, try a higher-quality model, and trim unrelated instructions.",
 
       /* Blog: curation to Notion */
       "blog-post-curation-page-title": "LLM Article Writing & Curation to Notion Guide",
@@ -712,6 +734,16 @@
       "blog-post-comic-step3",
       "blog-post-comic-step4",
       "blog-post-comic-tips",
+      "blog-post-comic-best-title",
+      "blog-post-comic-best-style",
+      "blog-post-comic-best-visual",
+      "blog-post-comic-best-iterate",
+      "blog-post-comic-prompt-title",
+      "blog-post-comic-prompt-desc",
+      "blog-post-comic-qa-title",
+      "blog-post-comic-qa-readiness",
+      "blog-post-comic-qa-save",
+      "blog-post-comic-qa-quality",
       "blog-post-curation-link",
       "blog-post-curation-title",
       "blog-post-curation-intro",
