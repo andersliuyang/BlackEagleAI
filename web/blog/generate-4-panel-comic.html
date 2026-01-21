@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="在网页上生成四格漫画：先配置图片生成模型，然后在任意网页对 BlackEagleAI 发起请求。" />
+    <meta name="description" content="先安装插件并配置图片生成模型，再在任意网页让 BlackEagleAI 基于当前页面生成四格漫画。" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>通过网页生成四格漫画 — 操作指南</title>
     <link rel="canonical" href="https://blackeagle.cozyai.chat/blog/generate-4-panel-comic.html" />
@@ -31,9 +31,13 @@
           <h1 id="blog-post-comic-title">如何通过网页生成四格漫画</h1>
           <p id="blog-post-comic-intro" class="desc">你可以在任何网页上，基于页面内容语义生成四格漫画，用于表达要点或讲故事。以下是最简单的入门方式：</p>
           <ol class="steps">
-            <li id="blog-post-comic-step1">步骤一：在插件『设置 / 模型配置』中，完成图片生成模型的配置（例如遵循 OpenAI SDK 的图片生成模型）。</li>
-            <li id="blog-post-comic-step2">步骤二：打开任意网页，侧边栏选择『读取页面』，让 AI 识别当前页面的主题与关键信息。</li>
-            <li id="blog-post-comic-step3">步骤三：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，等待生成并保存或分享。</li>
+            <li>
+              <span id="blog-post-comic-step1">步骤一：安装 BlackEagle 插件（首次使用先完成安装）</span>
+              <a id="blog-post-comic-install-link" href="../install-offline.html">查看安装教程</a>
+            </li>
+            <li id="blog-post-comic-step2">步骤二：在插件『设置 / 模型配置』中，完成图片生成模型的配置（例如遵循 OpenAI SDK 的图片生成模型）。</li>
+            <li id="blog-post-comic-step3">步骤三：打开任意网页，侧边栏选择『读取页面』，让 AI 识别当前页面的主题与关键信息。</li>
+            <li id="blog-post-comic-step4">步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，等待生成并保存或分享。</li>
           </ol>
           <p id="blog-post-comic-tips" class="tips">提示：你可以补充风格指令（如手绘、简洁线条）或限制角色与场景，让漫画更贴合你的需求。</p>
         </div>
