@@ -223,6 +223,25 @@
       "blog-post-comic-step3": "步骤三：打开任意网页，插件会自动『读取页面』，并在右下角展示“网页准备好”。",
       "blog-post-comic-step4": "步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，生成结果后会自动弹出保存对话框，选择保存位置后，图片将在新标签页中打开并展示。",
       "blog-post-comic-tips": "提示：你可以补充风格指令（如手绘、简洁线条）或限制角色与场景，让漫画更贴合你的需求。",
+
+      /* Blog: curation to Notion */
+      "blog-post-curation-page-title": "采编真实文章并保存到 Notion — 操作指南",
+      "blog-post-curation-meta-description": "使用 BlackEagleAI 在网页上采编真实文章，并一键保存到 Notion 的分步指南。",
+      "blog-post-curation-link": "采编真实文章并保存到 Notion",
+      "blog-post-curation-title": "如何采编真实文章并保存到 Notion",
+      "blog-post-curation-intro": "用 BlackEagleAI 在网页上快速完成“找资料 → 总结 → 写新稿 → 同步 Notion”的闭环，适用于内容采编、市场调研或知识整理。",
+      "blog-post-curation-step1": "步骤一：安装 BlackEagle 插件并完成基础设置。",
+      "blog-post-curation-install-link": "查看安装教程",
+      "blog-post-curation-step2": "步骤二：在插件『设置 / 模型配置』中，仅需配置对话大模型即可开始采编。",
+      "blog-post-curation-step3": "步骤三：打开你想采编的网页，或让 AI 推荐/筛选主题文章作为起点。",
+      "blog-post-curation-step4": "步骤四：让 AI 一键总结当前文章，得到要点与初稿。",
+      "blog-post-curation-step5": "步骤五：生成关键词并搜索更多相关文章，逐篇总结，汇总关键观点与出处。",
+      "blog-post-curation-step6": "步骤六：让 AI 基于所有资料撰写全新文章，并使用“保存到 Notion”将结果同步到你的空间。",
+      "blog-post-curation-tip": "提示：仅配置对话模型即可完成采编与 Notion 同步；如需图片或视觉理解再追加对应模型配置。",
+      "blog-post-curation-video-title": "采编流程演示",
+      "blog-post-curation-video-src": "https://player.bilibili.com/player.html?bvid=BV1Cnz5BkEux&autoplay=0",
+      "blog-post-curation-video-youtube": "Youtube（英文）",
+      "blog-post-curation-video-bilibili": "B站（中文）",
     },
     en: {
       "offline-page-title": "BlackEagle — Offline ZIP Install Guide",
@@ -424,6 +443,26 @@
       "blog-post-comic-step4":
         "Step 4: In chat, tell BlackEagleAI: 'Generate a 4‑panel comic based on the current page'. After generation a save dialog will appear; choose a location and the image will open in a new browser tab.",
       "blog-post-comic-tips": "Tip: Add style hints (e.g., hand‑drawn, clean lines) or constrain roles and scenes to better match your needs.",
+
+      /* Blog: curation to Notion */
+      "blog-post-curation-page-title": "Curate Real Articles and Save to Notion",
+      "blog-post-curation-meta-description": "Step-by-step guide to curate real articles with BlackEagleAI on the web and one-click save to Notion.",
+      "blog-post-curation-link": "Curate real articles and save to Notion",
+      "blog-post-curation-title": "How to Curate Real Articles and Save to Notion",
+      "blog-post-curation-intro":
+        "Run the full loop of 'find sources → summarize → write a new draft → sync to Notion' directly in the browser with BlackEagleAI—great for content curation, market research, or knowledge capture.",
+      "blog-post-curation-step1": "Step 1: Install the BlackEagle extension and finish basic setup.",
+      "blog-post-curation-install-link": "View install guide",
+      "blog-post-curation-step2": "Step 2: In Settings / Model Config, only a chat model is needed to start curation.",
+      "blog-post-curation-step3": "Step 3: Open the page you want to curate, or ask AI to recommend/trim articles as your starting point.",
+      "blog-post-curation-step4": "Step 4: Ask AI to summarize the current article in one click to get key points and a draft.",
+      "blog-post-curation-step5": "Step 5: Generate keywords, search more related articles, summarize each, and collect key viewpoints with sources.",
+      "blog-post-curation-step6": "Step 6: Have AI write a new article from all materials, then use 'Save to Notion' to sync it to your workspace.",
+      "blog-post-curation-tip": "Tip: A chat model alone covers curation and Notion sync; add image or vision models only when you need them.",
+      "blog-post-curation-video-title": "Workflow Demo",
+      "blog-post-curation-video-src": "https://www.youtube.com/embed/iYZeB8BR7bg?rel=0",
+      "blog-post-curation-video-youtube": "YouTube (EN)",
+      "blog-post-curation-video-bilibili": "Bilibili (ZH)",
       "nav-config": "Configuration Guide",
       "llm-config-title": "LLM Configuration Types",
       "llm-config-desc":
@@ -655,10 +694,29 @@
       "blog-post-comic-step3",
       "blog-post-comic-step4",
       "blog-post-comic-tips",
+      "blog-post-curation-link",
+      "blog-post-curation-title",
+      "blog-post-curation-intro",
+      "blog-post-curation-step1",
+      "blog-post-curation-install-link",
+      "blog-post-curation-step2",
+      "blog-post-curation-step3",
+      "blog-post-curation-step4",
+      "blog-post-curation-step5",
+      "blog-post-curation-step6",
+      "blog-post-curation-tip",
+      "blog-post-curation-video-title",
+      "blog-post-curation-video-youtube",
+      "blog-post-curation-video-bilibili",
     ].forEach(function (id) {
       var el = document.getElementById(id);
       if (el && t[id]) el.textContent = t[id];
     });
+    var curationFrame = document.getElementById("blog-post-curation-video-frame");
+    if (curationFrame) {
+      if (t["blog-post-curation-video-src"]) curationFrame.setAttribute("src", t["blog-post-curation-video-src"]);
+      if (t["blog-post-curation-video-title"]) curationFrame.setAttribute("title", t["blog-post-curation-video-title"]);
+    }
     var toggle = document.getElementById("lang-toggle");
     if (toggle) toggle.textContent = t["toggle"];
   }
