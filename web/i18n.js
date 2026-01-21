@@ -688,6 +688,7 @@
       "scenes-commerce-desc",
       "download-title",
       "download-desc",
+      "offline-meta-description",
       "support-contact-title",
       "support-privacy-title",
       "support-permission-title",

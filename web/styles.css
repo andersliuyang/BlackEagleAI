@@ -350,12 +350,17 @@ body {
   font-size: 12px;
 }
 .site-footer .copy a {
-  color: var(--secondary);
+  color: #7dd3fc; /* lighter cyan for better contrast */
   text-decoration: none;
   margin-left: 8px;
 }
 .site-footer .copy a:hover {
   text-decoration: underline;
+  color: #93c5fd; /* slightly different hover color */
+}
+
+a {
+  color: #7dd3fc; /* lighter cyan for better contrast */
 }
 
 @media (prefers-color-scheme: light) {

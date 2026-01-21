@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="先安装插件并配置图片生成模型，再在任意网页让 BlackEagleAI 基于当前页面生成四格漫画。" />
+    <meta name="description" content="Install the plugin and configure an image generation model, then ask BlackEagleAI to generate a 4-panel comic based on any webpage." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>通过网页生成四格漫画 — 操作指南</title>
+    <title>Generate a 4-Panel Comic from a Webpage — Guide</title>
     <link rel="canonical" href="https://blackeagle.cozyai.chat/blog/generate-4-panel-comic.html" />
     <link rel="icon" href="../assets/icon.ico" />
     <link rel="stylesheet" href="../styles.css" />
@@ -14,13 +14,13 @@
     <header class="site-header">
       <div class="container">
         <div class="brand">
-          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle 标志" />
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
           <span class="name">BlackEagle</span>
         </div>
         <nav class="top-nav">
-          <a id="nav-home" href="../index.html">返回首页</a>
-          <a id="nav-blog" href="index.html">博客</a>
-          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="切换语言">EN</a>
+          <a id="nav-home" href="../index.html">Home</a>
+          <a id="nav-blog" href="index.html">Blog</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
         </nav>
       </div>
     </header>
@@ -28,34 +28,46 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 id="blog-post-comic-title">如何通过网页生成四格漫画</h1>
-          <p id="blog-post-comic-intro" class="desc">你可以在任何网页上，基于页面内容语义生成四格漫画，用于表达要点或讲故事。以下是最简单的入门方式：</p>
+          <h1 id="blog-post-comic-title">How to Generate a 4-Panel Comic from a Webpage</h1>
+          <p id="blog-post-comic-intro" class="desc">
+            You can generate a 4-panel comic from any webpage based on the page's semantic content to express key points or tell a story. Here is the simplest getting-started approach:
+          </p>
           <ol class="steps">
             <li>
-              <span id="blog-post-comic-step1">步骤一：安装 BlackEagle 插件（首次使用先完成安装）</span>
-              <a id="blog-post-comic-install-link" href="../install-offline.html">查看安装教程</a>
+              <span id="blog-post-comic-step1">Step 1: Install the BlackEagle plugin (complete installation on first use)</span>
+              <a id="blog-post-comic-install-link" href="../install-offline.html">See installation guide</a>
             </li>
-            <li id="blog-post-comic-step2">步骤二：在插件『设置 / 模型配置』中，完成图片生成模型的配置（例如遵循 OpenAI SDK 的图片生成模型）。</li>
-            <li id="blog-post-comic-step3">步骤三：打开任意网页，插件会自动『读取页面』，并在右下角展示“网页准备好”。</li>
-            <li id="blog-post-comic-step4">步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，生成结果后会自动弹出保存对话框，选择保存位置后，图片将在新标签页中打开展示。</li>
+            <li id="blog-post-comic-step2">Step 2: In the plugin's Settings / Model Configuration, set up the image generation model (e.g., an OpenAI SDK-compatible image model).</li>
+            <li id="blog-post-comic-step3">Step 3: Open any webpage—the plugin will automatically "read the page" and show "page ready" in the bottom-right.</li>
+            <li id="blog-post-comic-step4">
+              Step 4: Tell BlackEagleAI in the chat: "Generate a 4-panel comic based on the current page." After generation, a save dialog appears; choose a location and the image will open in a new
+              tab.
+            </li>
           </ol>
-          <p id="blog-post-comic-tips" class="tips">提示：你可以补充风格指令（如手绘、简洁线条）或限制角色与场景，让漫画更贴合你的需求。</p>
+          <p id="blog-post-comic-tips" class="tips">Tip: Add style instructions (e.g., hand-drawn, clean lines) or constrain characters and scenes to better fit your needs.</p>
 
-          <h2 id="blog-post-comic-best-title">让漫画更好看的 3 个技巧</h2>
+          <h2 id="blog-post-comic-best-title">3 Tips to Make Your Comic Look Better</h2>
           <ul class="tips-list">
-            <li id="blog-post-comic-best-style">用“角色 + 情绪 + 场景 + 分镜”描述需求，例如：两位同事、轻松、办公室讨论新功能，四宫格、每格一句简短对白。</li>
-            <li id="blog-post-comic-best-visual">指定 4 宫格布局、1:1 或 4:3 画幅，台词保持短句，避免长段文字导致画面拥挤。</li>
-            <li id="blog-post-comic-best-iterate">先生成草稿，再追加风格（手绘、水彩、赛博感）或光影细节；分两步让 AI 迭代比一次性塞满指令更稳定。</li>
+            <li id="blog-post-comic-best-style">
+              Describe requirements as "character + emotion + scene + shot"—e.g., two colleagues, relaxed, office discussing a new feature; 4 panels, one short line per panel.
+            </li>
+            <li id="blog-post-comic-best-visual">Specify 4-panel layout and aspect ratio (1:1 or 4:3). Keep dialogue short to avoid crowded panels.</li>
+            <li id="blog-post-comic-best-iterate">
+              Generate a draft first, then add style (hand-drawn, watercolor, cyberpunk) or lighting details—iterating in two steps is more stable than packing all instructions at once.
+            </li>
           </ul>
 
-          <h2 id="blog-post-comic-prompt-title">示例提示词</h2>
-          <p id="blog-post-comic-prompt-desc" class="desc">“基于当前网页内容，生成一张 4 宫格漫画。角色保持一致，画面 1:1，线条简洁，风格轻松幽默，每格一句对白，主题围绕页面里的核心观点。”</p>
+          <h2 id="blog-post-comic-prompt-title">Example Prompt</h2>
+          <p id="blog-post-comic-prompt-desc" class="desc">
+            "Based on the current page content, generate a 4-panel comic. Keep the same character, 1:1 framing, clean line art, light humorous tone, one short line per panel, theme centered on the
+            page's core idea."
+          </p>
 
-          <h2 id="blog-post-comic-qa-title">常见问题排查</h2>
+          <h2 id="blog-post-comic-qa-title">Troubleshooting</h2>
           <ul class="qa-list">
-            <li id="blog-post-comic-qa-readiness">没看到“网页准备好”？点击插件里的“读取页面”重试，或刷新网页后再试。</li>
-            <li id="blog-post-comic-qa-save">生成后未弹出保存对话框？在浏览器允许下载弹窗/新标签页，并确认扩展拥有下载权限。</li>
-            <li id="blog-post-comic-qa-quality">画面与网页不符或质量低？检查图片生成模型是否配置成功，尝试更高质量模型，并减少无关指令。</li>
+            <li id="blog-post-comic-qa-readiness">No "page ready" indicator? Click "Read Page" in the extension or refresh the page and try again.</li>
+            <li id="blog-post-comic-qa-save">No save dialog after generation? Ensure the browser allows download popups/new tabs and that the extension has download permission.</li>
+            <li id="blog-post-comic-qa-quality">Image doesn't match the page or quality is low? Check the image model configuration, try a higher-quality model, and reduce unrelated instructions.</li>
           </ul>
         </div>
       </section>
@@ -64,14 +76,14 @@
     <footer class="site-footer">
       <div class="container">
         <div class="brand">
-          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle 标志" />
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
           <span class="name">BlackEagle</span>
         </div>
         <div class="copy">
           © 2026 BlackEagle. Local-first · Privacy-first.
-          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub 反馈</a>
-          <a id="footer-tutorial" href="../tutorial.html">配置教程</a>
-          <a id="footer-support" href="../support.html">支持与隐私</a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="../tutorial.html">Setup Guide</a>
+          <a id="footer-support" href="../support.html">Support & Privacy</a>
         </div>
       </div>
     </footer>

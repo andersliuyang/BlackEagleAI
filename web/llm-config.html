@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="BlackEagle 大模型配置说明：了解如何配置对话模型、文档识别模型、图片生成模型和视觉识别模型。" />
+    <meta name="description" content="BlackEagle LLM configuration guide: learn how to configure chat, document understanding, image generation, and vision models." />
     <meta name="theme-color" content="#0f172a" />
-    <meta property="og:title" content="BlackEagle — 大模型配置说明" />
-    <meta property="og:description" content="了解 BlackEagle 支持的四类大模型配置类型。" />
+    <meta property="og:title" content="BlackEagle — LLM Configuration Guide" />
+    <meta property="og:description" content="Learn which four types of large models BlackEagle supports." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/icon.ico" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- SEO Title & Description -->
-    <title>BlackEagle – 大模型配置类型说明</title>
+    <title>BlackEagle – LLM Configuration Types</title>
     <meta name="description" content="BlackEagle supports four types of large language models: Chat, Document Understanding, Image Generation, and Vision. Learn how to configure them." />
 
     <!-- Keywords -->
@@ -46,16 +46,16 @@
     <header class="site-header">
       <div class="container">
         <div class="brand">
-          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
           <span class="name">BlackEagle</span>
         </div>
         <nav class="top-nav">
-          <a href="index.html" id="nav-home">首页</a>
-          <a href="index.html#features" id="nav-features">特色</a>
-          <a href="index.html#scenes" id="nav-scenes">场景</a>
-          <a href="llm-config.html" class="active" id="nav-config">配置说明</a>
-          <a href="index.html#download" class="btn btn-outline" id="nav-download">下载</a>
-          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="切换语言">EN</a>
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="index.html#features" id="nav-features">Features</a>
+          <a href="index.html#scenes" id="nav-scenes">Scenes</a>
+          <a href="llm-config.html" class="active" id="nav-config">Configuration</a>
+          <a href="index.html#download" class="btn btn-outline" id="nav-download">Download</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
         </nav>
       </div>
     </header>
@@ -63,36 +63,42 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 id="llm-config-title">大模型配置类型说明</h1>
-          <p class="desc" id="llm-config-desc">BlackEagle 支持多种类型的大模型能力，并会根据不同功能自动调用对应的模型类型。目前插件可识别并使用以下 4 类大模型：</p>
+          <h1 id="llm-config-title">LLM Configuration Types</h1>
+          <p class="desc" id="llm-config-desc">
+            BlackEagle supports multiple types of large model capabilities and will automatically call the appropriate model type depending on the feature. The plugin currently recognizes and uses the
+            following four types of models:
+          </p>
 
           <div class="grid grid-2">
             <div class="card">
-              <h3 id="chat-model-title">对话模型（Chat / LLM）</h3>
-              <p id="chat-model-desc">用于日常对话、网页内容理解、文本生成与推理等核心交互能力。</p>
+              <h3 id="chat-model-title">Chat Model (Chat / LLM)</h3>
+              <p id="chat-model-desc">Used for everyday conversation, webpage content understanding, text generation, and reasoning—the core interactive capabilities.</p>
             </div>
             <div class="card">
-              <h3 id="doc-model-title">文档识别模型（Document / File Understanding）</h3>
-              <p id="doc-model-desc">用于解析和理解网页中的长文本、结构化文档或用户上传的文件内容。</p>
+              <h3 id="doc-model-title">Document Understanding Model (Document / File Understanding)</h3>
+              <p id="doc-model-desc">Used to parse and understand long texts on webpages, structured documents, or user-uploaded files.</p>
             </div>
             <div class="card">
-              <h3 id="image-gen-title">图片生成模型（Image Generation）</h3>
-              <p id="image-gen-desc">用于根据文本指令生成图片，支持创作、设计和内容增强等场景。</p>
+              <h3 id="image-gen-title">Image Generation Model</h3>
+              <p id="image-gen-desc">Generate images from text instructions for creative, design, and content enhancement scenarios.</p>
             </div>
             <div class="card">
-              <h3 id="vision-model-title">视觉识别模型（Vision / Multimodal）</h3>
-              <p id="vision-model-desc">用于理解网页中的图片、截图或视频画面，实现真正的多模态分析能力。</p>
+              <h3 id="vision-model-title">Vision / Multimodal Model</h3>
+              <p id="vision-model-desc">Used to understand images, screenshots, or video frames on webpages to enable true multimodal analysis.</p>
             </div>
           </div>
 
-          <p id="llm-auto-call">插件会根据功能场景自动匹配并调用对应类型的大模型。</p>
-          <p id="llm-recommend">如果你希望获得最完整、最强大的 AI 浏览器体验，建议将以上四类模型全部配置完成。</p>
+          <p id="llm-auto-call">The plugin will automatically match and call the appropriate model type based on the feature scenario.</p>
+          <p id="llm-recommend">For the most complete and powerful AI browser experience, we recommend configuring all four model types.</p>
 
-          <div class="alert" id="llm-alert">重要提示：BlackEagle 仅支持符合 OpenAI SDK 规范的模型接口。只有遵循该规范的大模型，插件才能正确识别、调度并稳定运行相关功能。</div>
+          <div class="alert" id="llm-alert">
+            Important: BlackEagle only supports model interfaces compatible with the OpenAI SDK. Only models that follow this standard can be correctly recognized, scheduled, and run stably by the
+            plugin.
+          </div>
 
           <div class="cta" style="margin-top: 40px">
-            <a href="index.html#download" class="btn btn-primary" id="llm-start-config">开始配置</a>
-            <a href="tutorial.html" class="btn btn-outline" id="llm-tutorial">配置教程</a>
+            <a href="index.html#download" class="btn btn-primary" id="llm-start-config">Start Configuration</a>
+            <a href="tutorial.html" class="btn btn-outline" id="llm-tutorial">Configuration Tutorial</a>
           </div>
         </div>
       </section>
@@ -101,7 +107,7 @@
     <footer class="site-footer">
       <div class="container">
         <div class="brand">
-          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
           <span class="name">BlackEagle</span>
         </div>
         <div class="copy">
@@ -117,8 +123,8 @@
               height="54"
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
           /></a>
-          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub 反馈</a>
-          <a id="footer-tutorial" href="tutorial.html">配置教程</a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="tutorial.html">Configuration Tutorial</a>
         </div>
       </div>
     </footer>
