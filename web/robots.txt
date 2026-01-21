@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow blog section
+Allow: /blog/
+
 # Sitemap
 Sitemap: https://blackeagle.cozyai.chat/sitemap.xml
 
-# Generated on 2026-01-17
+# Generated on 2026-01-21

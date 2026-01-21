@@ -37,4 +37,16 @@
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blackeagle.cozyai.chat/blog/generate-4-panel-comic.html</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
