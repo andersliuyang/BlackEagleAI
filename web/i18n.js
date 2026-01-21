@@ -214,14 +214,14 @@
 
       /* Blog: 4-panel comic post */
       "blog-post-comic-page-title": "通过网页生成四格漫画 — 操作指南",
-      "blog-post-comic-meta-description": "先安装插件并配置图片生成模型，然后在任意网页让 BlackEagleAI 基于当前页面生成四格漫画。",
+      "blog-post-comic-meta-description": "先安装插件并配置图片生成模型，然后在任意网页让 BlackEagleAI 基于当前页面生成四格漫画。生成完成后可选择保存，图片会在新标签页打开。",
       "blog-post-comic-title": "如何通过网页生成四格漫画",
       "blog-post-comic-intro": "你可以在任何网页上，基于页面内容语义生成四格漫画，用于表达要点或讲故事。以下是最简单的入门方式：",
       "blog-post-comic-step1": "步骤一：安装 BlackEagle 插件（首次使用先完成安装）",
       "blog-post-comic-install-link": "查看安装教程",
       "blog-post-comic-step2": "步骤二：在插件『设置 / 模型配置』中，完成图片生成模型的配置（例如遵循 OpenAI SDK 的图片生成模型）。",
-      "blog-post-comic-step3": "步骤三：打开任意网页，侧边栏选择『读取页面』，让 AI 识别当前页面的主题与关键信息。",
-      "blog-post-comic-step4": "步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，等待生成并保存或分享。",
+      "blog-post-comic-step3": "步骤三：打开任意网页，插件会自动『读取页面』，并在右下角展示“网页准备好”。",
+      "blog-post-comic-step4": "步骤四：在对话中对 BlackEagleAI 说：『帮我基于当前网页生成一个四格漫画』，生成结果后会自动弹出保存对话框，选择保存位置后，图片将在新标签页中打开并展示。",
       "blog-post-comic-tips": "提示：你可以补充风格指令（如手绘、简洁线条）或限制角色与场景，让漫画更贴合你的需求。",
     },
     en: {
@@ -237,7 +237,7 @@
       "nav-scenes": "Use Cases",
       "nav-support": "Support & Privacy",
       "nav-download": "Download",
-      "hero-title": "Your Personal AI Browser",
+      "hero-title": "BlackEagleAI — One‑click Summary for Any Webpage",
       "hero-sub": "Free · Local-first · No server · Privacy-first",
       "hero-desc": "Let AI browse like a human — understand pages and take actions. Install to get your personal AI browser.",
       "support-hero-title": "Support & Privacy",
@@ -413,14 +413,16 @@
 
       /* Blog: 4-panel comic post */
       "blog-post-comic-page-title": "Generate a 4‑Panel Comic from Any Webpage",
-      "blog-post-comic-meta-description": "Install the extension, configure an image generation model, then on any page ask BlackEagleAI to generate a 4‑panel comic from the current page.",
+      "blog-post-comic-meta-description":
+        "Install the extension, configure an image generation model, then on any page ask BlackEagleAI to generate a 4‑panel comic from the current page. After generation choose where to save; the image will open in a new tab.",
       "blog-post-comic-title": "How to Generate a 4‑Panel Comic from a Webpage",
       "blog-post-comic-intro": "On any page, you can generate a 4‑panel comic based on page semantics to convey key points or tell a story. Here’s the simplest way:",
       "blog-post-comic-step1": "Step 1: Install the BlackEagle extension (complete installation first).",
       "blog-post-comic-install-link": "View install guide",
       "blog-post-comic-step2": "Step 2: In the plugin ‘Settings / Model Config’, configure an image generation model (any OpenAI SDK‑compatible image model).",
-      "blog-post-comic-step3": "Step 3: Open any webpage and choose ‘Read Page’ in the sidebar so AI infers the topic and key information.",
-      "blog-post-comic-step4": "Step 4: In chat, say to BlackEagleAI: ‘Generate a 4‑panel comic based on the current page’, then save or share the result.",
+      "blog-post-comic-step3": "Step 3: Open any webpage — the plugin will automatically 'Read Page' and display 'Page ready' in the bottom‑right corner.",
+      "blog-post-comic-step4":
+        "Step 4: In chat, tell BlackEagleAI: 'Generate a 4‑panel comic based on the current page'. After generation a save dialog will appear; choose a location and the image will open in a new browser tab.",
       "blog-post-comic-tips": "Tip: Add style hints (e.g., hand‑drawn, clean lines) or constrain roles and scenes to better match your needs.",
       "nav-config": "Configuration Guide",
       "llm-config-title": "LLM Configuration Types",
