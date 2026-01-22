@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How to configure Notion in BlackEagleAI and save AI-generated content directly to Notion." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How to Save LLM-Generated Content Directly to Notion — BlackEagle</title>
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/blog/notion-setup.html" />
+    <link rel="icon" href="../assets/icon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-page="blog-post-notion-setup">
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <nav class="top-nav">
+          <a id="nav-features" href="../index.html#features">Features</a>
+          <a id="nav-scenes" href="../index.html#scenes">Scenes</a>
+          <a id="nav-config" href="../llm-config.html">Configuration</a>
+          <a id="nav-blog" href="index.html">Blog</a>
+          <a id="nav-support" href="../support.html">Support</a>
+          <a id="nav-download" href="../index.html#download" class="btn btn-outline">Download</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 id="blog-post-notion-setup-title">How to Save LLM-Generated Content Directly to Notion</h1>
+          <p id="blog-post-notion-setup-desc" class="desc">Send AI-generated content straight into your Notion to build a durable knowledge base.</p>
+
+          <h2 id="blog-post-notion-setup-overview-title">Overview</h2>
+          <p id="blog-post-notion-setup-overview-desc">Create a Notion integration, authorize a page, then set the token in BlackEagleAI to one-click save chats or articles to Notion.</p>
+
+          <h3 id="blog-post-notion-setup-step1-title">1) Create a Notion integration and get the token</h3>
+          <ol>
+            <li>
+              <span id="blog-post-notion-setup-step1-item1">Open the Notion integrations page:</span>
+              <a href="https://www.notion.so/my-integrations" target="_blank" rel="noopener">https://www.notion.so/my-integrations</a>
+            </li>
+            <li id="blog-post-notion-setup-step1-item2">Click <strong>New integration</strong>, fill details (e.g., name: <em>BlackEagleAI</em>), and choose the workspace.</li>
+            <li id="blog-post-notion-setup-step1-item3">Recommended permissions: <strong>Read content</strong>, <strong>Insert content</strong>, <strong>Update content</strong>.</li>
+            <li id="blog-post-notion-setup-step1-item4">After creation, copy the <strong>Internal Integration Token</strong> (the Notion token).</li>
+          </ol>
+
+          <h3 id="blog-post-notion-setup-step2-title">2) Prepare the target page and authorize the integration</h3>
+          <p id="blog-post-notion-setup-step2-desc">BlackEagleAI writes to the page you authorize, so you need:</p>
+          <ol>
+            <li id="blog-post-notion-setup-step2-item1">Create a page in Notion (recommend naming it <strong>BlackEagleAI</strong>).</li>
+            <li id="blog-post-notion-setup-step2-item2">Open the page menu (···), choose <strong>Add connections</strong>, and connect the integration to this page.</li>
+          </ol>
+
+          <h3 id="blog-post-notion-setup-step3-title">3) Configure Notion inside BlackEagleAI</h3>
+          <ol>
+            <li id="blog-post-notion-setup-step3-item1">Open BlackEagleAI Options in the browser.</li>
+            <li id="blog-post-notion-setup-step3-item2">Go to More Settings → <strong>Notion</strong>, paste the token from step 1, and save.</li>
+          </ol>
+
+          <h3 id="blog-post-notion-setup-step4-title">4) One-click save articles to Notion</h3>
+          <p id="blog-post-notion-setup-step4-desc">After setup, you can ask AI to draft, refine, or polish content, then:</p>
+          <ul>
+            <li id="blog-post-notion-setup-step4-item1">Click Save to Notion in chat (or say “save this article to my Notion”).</li>
+            <li id="blog-post-notion-setup-step4-item2">The plugin writes to your authorized Notion page—no copy/paste needed.</li>
+          </ul>
+
+          <h3 id="blog-post-notion-setup-step5-title">5) Notes</h3>
+          <ul>
+            <li id="blog-post-notion-setup-step5-item1">Keep the Internal Integration Token safe; do not share it.</li>
+            <li id="blog-post-notion-setup-step5-item2">Ensure the integration has write access on the target page, otherwise saving will fail.</li>
+          </ul>
+
+          <h3 id="blog-post-notion-setup-summary-title">Summary</h3>
+          <p id="blog-post-notion-setup-summary-desc">Linking BlackEagleAI with Notion keeps high-quality AI outputs as a long-term knowledge base, improving writing and curation efficiency.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="../tutorial.html">Setup Guide</a>
+          <a id="footer-support" href="../support.html">Support & Privacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../i18n.js"></script>
+  </body>
+</html>
