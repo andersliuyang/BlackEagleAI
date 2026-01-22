@@ -4,8 +4,8 @@
       const saved = localStorage.getItem("beLang");
       if (saved === "en" || saved === "zh") return saved;
     } catch {}
-    const nav = navigator.language || navigator.userLanguage || "en";
-    return nav.toLowerCase().startsWith("zh") ? "zh" : "en";
+    // Default to English site-wide unless user explicitly saved preference.
+    return "en";
   }
 
   const dict = {
