@@ -1,145 +1,155 @@
 <!doctype html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="BlackEagle LLM configuration guide: learn how to configure chat, document understanding, image generation, and vision models." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="BlackEagle — LLM Configuration Guide" />
+    <meta property="og:description" content="Learn which four types of large models BlackEagle supports." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icon.ico" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="BlackEagle LLM configuration guide: learn how to configure chat, document understanding, image generation, and vision models." />
-  <meta name="theme-color" content="#0f172a" />
-  <meta property="og:title" content="BlackEagle — LLM Configuration Guide" />
-  <meta property="og:description" content="Learn which four types of large models BlackEagle supports." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/icon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- SEO Title & Description -->
+    <title>BlackEagle – LLM Configuration Types</title>
+    <meta name="description" content="BlackEagle supports four types of large language models: Chat, Document Understanding, Image Generation, and Vision. Learn how to configure them." />
 
-  <!-- SEO Title & Description -->
-  <title>BlackEagle – LLM Configuration Types</title>
-  <meta name="description"
-    content="BlackEagle supports four types of large language models: Chat, Document Understanding, Image Generation, and Vision. Learn how to configure them." />
+    <!-- Keywords -->
+    <meta name="keywords" content="AI browser extension, LLM configuration, BlackEagle models" />
 
-  <!-- Keywords -->
-  <meta name="keywords" content="AI browser extension, LLM configuration, BlackEagle models" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/llm-config.html" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://blackeagle.cozyai.chat/llm-config.html" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BlackEagle – LLM Configuration Guide" />
+    <meta property="og:description" content="Configure your AI models for the ultimate BlackEagle experience." />
+    <meta property="og:url" content="https://blackeagle.cozyai.chat/llm-config.html" />
+    <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <meta property="og:site_name" content="BlackEagle" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="BlackEagle – LLM Configuration Guide" />
-  <meta property="og:description" content="Configure your AI models for the ultimate BlackEagle experience." />
-  <meta property="og:url" content="https://blackeagle.cozyai.chat/llm-config.html" />
-  <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
-  <meta property="og:site_name" content="BlackEagle" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BlackEagle – LLM Configuration" />
+    <meta name="twitter:description" content="Configure four types of AI models for BlackEagle." />
+    <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="BlackEagle – LLM Configuration" />
-  <meta name="twitter:description" content="Configure four types of AI models for BlackEagle." />
-  <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <!-- Language -->
+    <meta http-equiv="content-language" content="zh" />
 
-  <!-- Language -->
-  <meta http-equiv="content-language" content="zh" />
+    <link rel="icon" href="assets/icon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Normalize footer badge sizes */
+      #footer-producthunt img,
+      #footer-findyouragent img {
+        height: 40px;
+        width: auto;
+        max-width: 220px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      @media (max-width: 480px) {
+        #footer-producthunt img,
+        #footer-findyouragent img {
+          height: 32px;
+          max-width: 160px;
+        }
+      }
+    </style>
+  </head>
 
-  <link rel="icon" href="assets/icon.ico" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body data-page="llm-config">
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <nav class="top-nav">
-        <a href="index.html" id="nav-home">Home</a>
-        <a href="index.html#features" id="nav-features">Features</a>
-        <a href="index.html#scenes" id="nav-scenes">Scenes</a>
-        <a href="llm-config.html" class="active" id="nav-config">Configuration</a>
-        <a href="index.html#download" class="btn btn-outline" id="nav-download">Download</a>
-        <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="section">
+  <body data-page="llm-config">
+    <header class="site-header">
       <div class="container">
-        <h1 id="llm-config-title">LLM Configuration Types</h1>
-        <p class="desc" id="llm-config-desc">
-          BlackEagle supports multiple types of large model capabilities and will automatically call the appropriate
-          model type depending on the feature. The plugin currently recognizes and uses the
-          following four types of models:
-        </p>
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <nav class="top-nav">
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="index.html#features" id="nav-features">Features</a>
+          <a href="index.html#scenes" id="nav-scenes">Scenes</a>
+          <a href="llm-config.html" class="active" id="nav-config">Configuration</a>
+          <a href="index.html#download" class="btn btn-outline" id="nav-download">Download</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="grid grid-2">
-          <div class="card">
-            <h3 id="chat-model-title">Chat Model (Chat / LLM)</h3>
-            <p id="chat-model-desc">Used for everyday conversation, webpage content understanding, text generation, and
-              reasoning—the core interactive capabilities.</p>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 id="llm-config-title">LLM Configuration Types</h1>
+          <p class="desc" id="llm-config-desc">
+            BlackEagle supports multiple types of large model capabilities and will automatically call the appropriate model type depending on the feature. The plugin currently recognizes and uses the
+            following four types of models:
+          </p>
+
+          <div class="grid grid-2">
+            <div class="card">
+              <h3 id="chat-model-title">Chat Model (Chat / LLM)</h3>
+              <p id="chat-model-desc">Used for everyday conversation, webpage content understanding, text generation, and reasoning—the core interactive capabilities.</p>
+            </div>
+            <div class="card">
+              <h3 id="doc-model-title">Document Understanding Model (Document / File Understanding)</h3>
+              <p id="doc-model-desc">Used to parse and understand long texts on webpages, structured documents, or user-uploaded files.</p>
+            </div>
+            <div class="card">
+              <h3 id="image-gen-title">Image Generation Model</h3>
+              <p id="image-gen-desc">Generate images from text instructions for creative, design, and content enhancement scenarios.</p>
+            </div>
+            <div class="card">
+              <h3 id="vision-model-title">Vision / Multimodal Model</h3>
+              <p id="vision-model-desc">Used to understand images, screenshots, or video frames on webpages to enable true multimodal analysis.</p>
+            </div>
           </div>
-          <div class="card">
-            <h3 id="doc-model-title">Document Understanding Model (Document / File Understanding)</h3>
-            <p id="doc-model-desc">Used to parse and understand long texts on webpages, structured documents, or
-              user-uploaded files.</p>
+
+          <p id="llm-auto-call">The plugin will automatically match and call the appropriate model type based on the feature scenario.</p>
+          <p id="llm-recommend">For the most complete and powerful AI browser experience, we recommend configuring all four model types.</p>
+
+          <div class="alert" id="llm-alert">
+            Important: BlackEagle only supports model interfaces compatible with the OpenAI SDK. Only models that follow this standard can be correctly recognized, scheduled, and run stably by the
+            plugin.
           </div>
-          <div class="card">
-            <h3 id="image-gen-title">Image Generation Model</h3>
-            <p id="image-gen-desc">Generate images from text instructions for creative, design, and content enhancement
-              scenarios.</p>
-          </div>
-          <div class="card">
-            <h3 id="vision-model-title">Vision / Multimodal Model</h3>
-            <p id="vision-model-desc">Used to understand images, screenshots, or video frames on webpages to enable true
-              multimodal analysis.</p>
+
+          <div class="cta" style="margin-top: 40px">
+            <a href="index.html#download" class="btn btn-primary" id="llm-start-config">Start Configuration</a>
+            <a href="tutorial.html" class="btn btn-outline" id="llm-tutorial">Configuration Tutorial</a>
           </div>
         </div>
+      </section>
+    </main>
 
-        <p id="llm-auto-call">The plugin will automatically match and call the appropriate model type based on the
-          feature scenario.</p>
-        <p id="llm-recommend">For the most complete and powerful AI browser experience, we recommend configuring all
-          four model types.</p>
-
-        <div class="alert" id="llm-alert">
-          Important: BlackEagle only supports model interfaces compatible with the OpenAI SDK. Only models that follow
-          this standard can be correctly recognized, scheduled, and run stably by the
-          plugin.
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
         </div>
-
-        <div class="cta" style="margin-top: 40px">
-          <a href="index.html#download" class="btn btn-primary" id="llm-start-config">Start Configuration</a>
-          <a href="tutorial.html" class="btn btn-outline" id="llm-tutorial">Configuration Tutorial</a>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a
+            id="footer-producthunt"
+            href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
+            />
+          </a>
+          <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
+            <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
+          </a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="tutorial.html">Configuration Tutorial</a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <div class="copy">
-        © 2026 BlackEagle. Local-first · Privacy-first.
-        <a id="footer-producthunt"
-          href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
-          target="_blank" rel="noopener noreferrer"><img
-            alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt" width="250"
-            height="54"
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864" /></a>
-        <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer"
-          style="text-decoration: none;"><img src="https://findyouragent.ai/embed-badge-gradient.svg"
-            alt="FindYourAgent Logo" style="height: 10%; width: auto;" /></a>
-        <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub
-          Feedback</a>
-        <a id="footer-tutorial" href="tutorial.html">Configuration Tutorial</a>
-      </div>
-    </div>
-  </footer>
-  <script src="i18n.js"></script>
-</body>
-
+    </footer>
+    <script src="i18n.js"></script>
+  </body>
 </html>

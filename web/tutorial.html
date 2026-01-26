@@ -1,114 +1,134 @@
 <!doctype html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlackEagle — DeepSeek 基础配置教程</title>
+    <meta name="description" content="一步完成：申请 DeepSeek API Key，并在 BlackEagle 插件中进行最基本的对话配置。" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Normalize footer badge sizes */
+      #footer-producthunt img,
+      #footer-findyouragent img {
+        height: 40px;
+        width: auto;
+        max-width: 220px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      @media (max-width: 480px) {
+        #footer-producthunt img,
+        #footer-findyouragent img {
+          height: 32px;
+          max-width: 160px;
+        }
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlackEagle — DeepSeek 基础配置教程</title>
-  <meta name="description" content="一步完成：申请 DeepSeek API Key，并在 BlackEagle 插件中进行最基本的对话配置。" />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <nav class="top-nav">
-        <a id="nav-home" href="index.html">返回首页</a>
-        <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="切换语言">EN</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
+  <body>
+    <header class="site-header">
       <div class="container">
-        <h1 id="tutorial-hero-title">DeepSeek 基础配置教程</h1>
-        <p id="tutorial-hero-desc" class="desc">按照下面步骤，完成 API Key 申请与在 BlackEagle 的基础对话配置。</p>
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <nav class="top-nav">
+          <a id="nav-home" href="index.html">返回首页</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="切换语言">EN</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
-      <div class="container">
-        <h2 id="tutorial-apply-title">一、申请 DeepSeek API Key</h2>
-        <div class="grid">
-          <div class="card">
-            <ol>
-              <li id="tutorial-apply-step1">访问 DeepSeek 官网（开发者门户），注册并登录账号。</li>
-              <li id="tutorial-apply-step2">打开「API Keys」页面，点击新建，生成一个 API Key。</li>
-              <li id="tutorial-apply-step3">复制并妥善保存该 Key，用于 BlackEagle 的模型配置。</li>
-            </ol>
-          </div>
-          <div class="card">
-            <h3 id="tutorial-endpoint-title">常用 Endpoint 示例</h3>
-            <p id="tutorial-endpoint-desc">例如：<span class="mono">https://api.deepseek.com/v1</span>（具体以官方文档为准）</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 id="tutorial-hero-title">DeepSeek 基础配置教程</h1>
+          <p id="tutorial-hero-desc" class="desc">按照下面步骤，完成 API Key 申请与在 BlackEagle 的基础对话配置。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 id="tutorial-apply-title">一、申请 DeepSeek API Key</h2>
+          <div class="grid">
+            <div class="card">
+              <ol>
+                <li id="tutorial-apply-step1">访问 DeepSeek 官网（开发者门户），注册并登录账号。</li>
+                <li id="tutorial-apply-step2">打开「API Keys」页面，点击新建，生成一个 API Key。</li>
+                <li id="tutorial-apply-step3">复制并妥善保存该 Key，用于 BlackEagle 的模型配置。</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3 id="tutorial-endpoint-title">常用 Endpoint 示例</h3>
+              <p id="tutorial-endpoint-desc">例如：<span class="mono">https://api.deepseek.com/v1</span>（具体以官方文档为准）</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt">
-      <div class="container">
-        <h2 id="tutorial-config-title">二、在 BlackEagle 中进行配置</h2>
-        <div class="grid">
-          <div class="card">
-            <ol>
-              <li id="tutorial-config-step1">打开插件侧边栏，进入「设置 / 模型配置」页面。</li>
-              <li id="tutorial-config-step2">填写 Endpoint、选择模型（如 deepseek-chat），粘贴 API Key。</li>
-              <li id="tutorial-config-step3">保存后，在对话框输入「Hello」进行测试。</li>
-            </ol>
-          </div>
-          <div class="card">
-            <img class="screenshot" src="https://blackeagle.app887.com/screenshot01.png" alt="配置界面截图" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 id="tutorial-faq-title">常见问题</h2>
-        <div class="grid">
-          <div class="card">
-            <p id="tutorial-faq-1">无法连接？请检查 Endpoint 是否正确、Key 是否有效，以及是否有网络代理限制。</p>
-          </div>
-          <div class="card">
-            <p id="tutorial-faq-2">模型返回慢？尝试降低温度、选择更快的模型，或优化提示词长度。</p>
+      <section class="section alt">
+        <div class="container">
+          <h2 id="tutorial-config-title">二、在 BlackEagle 中进行配置</h2>
+          <div class="grid">
+            <div class="card">
+              <ol>
+                <li id="tutorial-config-step1">打开插件侧边栏，进入「设置 / 模型配置」页面。</li>
+                <li id="tutorial-config-step2">填写 Endpoint、选择模型（如 deepseek-chat），粘贴 API Key。</li>
+                <li id="tutorial-config-step3">保存后，在对话框输入「Hello」进行测试。</li>
+              </ol>
+            </div>
+            <div class="card">
+              <img class="screenshot" src="https://blackeagle.app887.com/screenshot01.png" alt="配置界面截图" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <div class="copy">
-        © 2026 BlackEagle. <a id="tutorial-back-home" href="index.html">返回首页</a>
-        <a id="footer-producthunt"
-          href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
-          target="_blank" rel="noopener noreferrer"><img
-            alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt" width="250"
-            height="54"
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864" /></a>
-        <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer"
-          style="text-decoration: none;"><img src="https://findyouragent.ai/embed-badge-gradient.svg"
-            alt="FindYourAgent Logo" style="height: 10%; width: auto;" /></a>
-        <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank"
-          rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </footer>
+      <section class="section">
+        <div class="container">
+          <h2 id="tutorial-faq-title">常见问题</h2>
+          <div class="grid">
+            <div class="card">
+              <p id="tutorial-faq-1">无法连接？请检查 Endpoint 是否正确、Key 是否有效，以及是否有网络代理限制。</p>
+            </div>
+            <div class="card">
+              <p id="tutorial-faq-2">模型返回慢？尝试降低温度、选择更快的模型，或优化提示词长度。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <script src="i18n.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle 标志" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. <a id="tutorial-back-home" href="index.html">返回首页</a>
+          <a
+            id="footer-producthunt"
+            href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
+            />
+          </a>
+          <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
+            <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
+          </a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
 
+    <script src="i18n.js"></script>
+  </body>
 </html>
