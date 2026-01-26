@@ -1,470 +1,511 @@
 <!doctype html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary meta description (i18n will override content) -->
+    <meta name="description" content="AI Browser Assistant: read webpages, automate clicks/fills, and generate content." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="BlackEagle — Your Personal AI Browser" />
+    <meta property="og:description" content="Free · Local-first · No server required · Privacy-first. Install to get a personalized AI browser." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icon.ico" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Primary meta description (i18n will override content) -->
-  <meta name="description"
-    content="AI Browser Assistant: read webpages, automate clicks/fills, and generate content." />
-  <meta name="theme-color" content="#0f172a" />
-  <meta property="og:title" content="BlackEagle — Your Personal AI Browser" />
-  <meta property="og:description"
-    content="Free · Local-first · No server required · Privacy-first. Install to get a personalized AI browser." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/icon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- SEO Title & Description -->
+    <title>AI Browser Assistant: Read, Click/Fill, and Create</title>
 
-  <!-- SEO Title & Description -->
-  <title>AI Browser Assistant: Read, Click/Fill, and Create</title>
+    <!-- Keywords (optional but OK) -->
+    <meta name="keywords" content="AI browser extension, AI assistant, Chrome AI plugin, webpage AI, local-first AI, LLM browser tool" />
 
-  <!-- Keywords (optional but OK) -->
-  <meta name="keywords"
-    content="AI browser extension, AI assistant, Chrome AI plugin, webpage AI, local-first AI, LLM browser tool" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://blackeagle.cozyai.chat/" />
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BlackEagle – A Real AI Browser Extension with Hands" />
+    <meta property="og:description" content="Unlike chatbots, BlackEagle can actually read and operate webpages. Connect any AI model and turn your browser into a powerful AI worker." />
+    <meta property="og:url" content="https://blackeagle.cozyai.chat/" />
+    <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <meta property="og:site_name" content="BlackEagle" />
 
-  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="BlackEagle – A Real AI Browser Extension with Hands" />
-  <meta property="og:description"
-    content="Unlike chatbots, BlackEagle can actually read and operate webpages. Connect any AI model and turn your browser into a powerful AI worker." />
-  <meta property="og:url" content="https://blackeagle.cozyai.chat/" />
-  <meta property="og:image" content="https://blackeagle.cozyai.chat/og-image.png" />
-  <meta property="og:site_name" content="BlackEagle" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BlackEagle – AI That Can Actually Use Your Browser" />
+    <meta name="twitter:description" content="A local-first AI browser extension that reads, understands, and operates webpages. Bring your own AI models." />
+    <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="BlackEagle – AI That Can Actually Use Your Browser" />
-  <meta name="twitter:description"
-    content="A local-first AI browser extension that reads, understands, and operates webpages. Bring your own AI models." />
-  <meta name="twitter:image" content="https://blackeagle.cozyai.chat/og-image.png" />
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en" />
 
-  <!-- Language -->
-  <meta http-equiv="content-language" content="en" />
+    <link rel="icon" href="assets/icon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Normalize footer badge sizes */
+      #footer-producthunt img,
+      #footer-findyouragent img {
+        height: 40px;
+        width: auto;
+        max-width: 220px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      @media (max-width: 480px) {
+        #footer-producthunt img,
+        #footer-findyouragent img {
+          height: 32px;
+          max-width: 160px;
+        }
+      }
+    </style>
+  </head>
 
-  <link rel="icon" href="assets/icon.ico" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <nav class="top-nav">
-        <a id="nav-features" href="#features">Features</a>
-        <a id="nav-scenes" href="#scenes">Scenes</a>
-        <a id="nav-config" href="llm-config.html">Configuration</a>
-        <a id="nav-blog" href="blog/index.html">Blog</a>
-        <a id="nav-support" href="support.html">Support</a>
-        <a id="nav-download" href="install-offline.html" class="btn btn-outline">Download</a>
-        <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
+  <body>
+    <header class="site-header">
       <div class="container">
-        <div class="promo-banner">
-          <a id="promo-deeptoken" class="promo-link" href="deeptoken-promo.html">New users receive 500,000 Deepseek V3.2
-            full‑powered Tokens — limited supply, first come, first served.</a>
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
         </div>
-        <h1 id="hero-title">Your Personal AI Browser</h1>
-        <p id="hero-sub" class="sub">Free · Local-first · No server required · Privacy-first</p>
-        <p id="hero-desc" class="desc">Let AI use the browser like a human: understand webpages and perform actions.
-          Install to get a personalized AI browser.</p>
-        <div class="cta">
-          <a id="cta-chrome" class="btn btn-primary"
-            href="https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb">Install
-            for Chrome</a>
-          <a id="cta-edge" class="btn btn-secondary"
-            href="https://microsoftedge.microsoft.com/addons/detail/blackeagleai/nfnonndhjocfbdekdffinapjnakjinen">Install
-            for Edge</a>
-        </div>
-        <div class="badges">
-          <span id="badge-1">Local-first</span>
-          <span id="badge-2">Multi-model Support</span>
-          <span id="badge-3">Multimodal Understanding</span>
-        </div>
-        <img class="hero-logo" src="assets/logo.png" alt="BlackEagle Logo" />
+        <nav class="top-nav">
+          <a id="nav-features" href="#features">Features</a>
+          <a id="nav-scenes" href="#scenes">Scenes</a>
+          <a id="nav-config" href="llm-config.html">Configuration</a>
+          <a id="nav-blog" href="blog/index.html">Blog</a>
+          <a id="nav-support" href="support.html">Support</a>
+          <a id="nav-download" href="install-offline.html" class="btn btn-outline">Download</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2 id="features-title">Core Features</h2>
-        <div class="grid">
-          <div class="card">
-            <h3 id="features-local-title">Local-first</h3>
-            <p id="features-local-desc">Webpage content and actions don't pass through third parties—your data stays
-              with you.</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="promo-banner">
+            <a id="promo-deeptoken" class="promo-link" href="deeptoken-promo.html">New users receive 500,000 Deepseek V3.2 full‑powered Tokens — limited supply, first come, first served.</a>
           </div>
-          <div class="card">
-            <h3 id="features-free-title">Free, Ready to Use</h3>
-            <p id="features-free-desc">Install to use core functionality immediately and validate real scenarios.</p>
+          <h1 id="hero-title">Your Personal AI Browser</h1>
+          <p id="hero-sub" class="sub">Free · Local-first · No server required · Privacy-first</p>
+          <p id="hero-desc" class="desc">Let AI use the browser like a human: understand webpages and perform actions. Install to get a personalized AI browser.</p>
+          <div class="cta">
+            <a id="cta-chrome" class="btn btn-primary" href="https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb">Install for Chrome</a>
+            <a id="cta-edge" class="btn btn-secondary" href="https://microsoftedge.microsoft.com/addons/detail/blackeagleai/nfnonndhjocfbdekdffinapjnakjinen">Install for Edge</a>
           </div>
-          <div class="card">
-            <h3 id="features-noserver-title">No Server Required</h3>
-            <p id="features-noserver-desc">No backend or crawlers needed—AI completes tasks directly in the browser.</p>
+          <div class="badges">
+            <span id="badge-1">Local-first</span>
+            <span id="badge-2">Multi-model Support</span>
+            <span id="badge-3">Multimodal Understanding</span>
           </div>
-          <div class="card">
-            <h3 id="features-model-title">Bring Your Own Model</h3>
-            <p id="features-model-desc">Connect your own LLM Endpoint + API Key for flexible, low-cost operation.</p>
-          </div>
-          <div class="card">
-            <h3 id="features-ops-title">Understand & Act</h3>
-            <p id="features-ops-desc">Read webpages and selected content; automate clicks, fills, and
-              navigation—multi-step flows completed in one place.</p>
-          </div>
-          <div class="card">
-            <h3 id="features-multimodal-title">Multimodal Support</h3>
-            <p id="features-multimodal-desc">Automatically understand and extract from video, images, and documents to
-              produce structured outputs.</p>
-          </div>
+          <img class="hero-logo" src="assets/logo.png" alt="BlackEagle Logo" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="scenes" class="section alt">
-      <div class="container">
-        <h2 id="scenes-title">Use Cases</h2>
-        <div class="grid grid-3">
-          <div class="card">
-            <h3 id="scenes-research-title">Market Research</h3>
-            <p id="scenes-research-desc">Auto-open sites and extract key information; aggregate competitor pricing,
-              features, and announcements in one click.</p>
-          </div>
-          <div class="card">
-            <h3 id="scenes-content-title">Content Creation</h3>
-            <p id="scenes-content-desc">Read reference articles to generate originals, synthesize deep pieces from
-              multiple pages, and auto-extract video & image content.</p>
-          </div>
-          <div class="card">
-            <h3 id="scenes-commerce-title">E-commerce & Ops</h3>
-            <p id="scenes-commerce-desc">Analyze reviews, compare competitors, and auto-publish; if you can click it, AI
-              can click it for you.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="feature" class="section feature-section">
-      <div class="container">
-        <h2 id="feature-hero-title">Automatic Web Form Understanding & Filling</h2>
-        <p id="feature-hero-desc" class="desc">BlackEagle reads webpage semantics and field structures to automate
-          multi-step form flows like clicking, filling, and navigation.</p>
-        <div class="demo-grid">
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video-title">Demo Videos</h3>
-              <p id="feature-video-desc" class="desc">BlackEagle reads webpage semantics and field structures to
-                automate multi-step form flows like clicking, filling, and navigation.</p>
+      <section id="features" class="section">
+        <div class="container">
+          <h2 id="features-title">Core Features</h2>
+          <div class="grid">
+            <div class="card">
+              <h3 id="features-local-title">Local-first</h3>
+              <p id="features-local-desc">Webpage content and actions don't pass through third parties—your data stays with you.</p>
             </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
-                data-youtube="https://www.youtube.com/embed/v7uHzhgySfQ"
-                title="Automatic form filling & webpage actions" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
+            <div class="card">
+              <h3 id="features-free-title">Free, Ready to Use</h3>
+              <p id="features-free-desc">Install to use core functionality immediately and validate real scenarios.</p>
             </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video9-title">Turn Web Content into Images</h3>
-              <p id="feature-video9-desc" class="desc">
-                Generate 4-panel comics, illustrations, or multi-style images (not screenshots) by truly understanding
-                page semantics. Demo video coming soon—stay tuned.
-              </p>
+            <div class="card">
+              <h3 id="features-noserver-title">No Server Required</h3>
+              <p id="features-noserver-desc">No backend or crawlers needed—AI completes tasks directly in the browser.</p>
             </div>
-            <div class="demo-media">
-              <iframe class="video" src="https://www.youtube.com/embed/um1t-0mJygQ"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV14nrkBPE9o&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=3.3"
-                data-youtube="https://www.youtube.com/embed/um1t-0mJygQ" title="Turn a webpage into a 4-panel comic"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
+            <div class="card">
+              <h3 id="features-model-title">Bring Your Own Model</h3>
+              <p id="features-model-desc">Connect your own LLM Endpoint + API Key for flexible, low-cost operation.</p>
             </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video2-title">Auto-interpret Hard-to-read Web Content</h3>
-              <p id="feature-video2-desc" class="desc">Help interpret obscure or technical webpage content, extracting
-                key points and recommended actions.</p>
+            <div class="card">
+              <h3 id="features-ops-title">Understand & Act</h3>
+              <p id="features-ops-desc">Read webpages and selected content; automate clicks, fills, and navigation—multi-step flows completed in one place.</p>
             </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
-                data-youtube="https://www.youtube.com/embed/Mihe8nXUxS8" title="Auto-interpret Hard-to-read Web Content"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video10-title">One-click Summarize and Export to Notion</h3>
-              <p id="feature-video10-desc" class="desc">One-click summarize page content and export translated results
-                to your Notion for saving and reuse.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1eMkjBgEQu&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.9"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1eMkjBgEQu&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.9"
-                data-youtube="https://www.youtube.com/embed/u3TPMtbDahE"
-                title="One-click Summarize and Export to Notion" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video3-title">Auto-generate Articles and Export</h3>
-              <p id="feature-video3-desc" class="desc">Write articles based on webpage content, automatically organize
-                and export as documents for easy editing and sharing.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
-                data-youtube="https://www.youtube.com/embed/h-KhNkPeStI" title="Auto-generate Articles and Export"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video4-title">Local Large-PDF Summarization</h3>
-              <p id="feature-video4-desc" class="desc">Parse and summarize very large PDFs locally, quickly extracting
-                key points and conclusions while keeping data private.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
-                data-youtube="https://www.youtube.com/embed/e-2P8f3vbZg" title="Local large-PDF summarization"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video5-title">Local/Web Video Reading & Summarization</h3>
-              <p id="feature-video5-desc" class="desc">
-                Supports reading local video files or online videos on webpages, extracting key points, reading
-                subtitles, and directly generating articles.
-              </p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
-                data-youtube="https://www.youtube.com/embed/tnaK5k8WSF0" title="Local/Web Video Reading & Summarization"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video6-title">Read & Process Emails</h3>
-              <p id="feature-video6-desc" class="desc">
-                Automatically read your emails, identify and handle tasks; supports parsing images and resources in
-                emails and generating replies or summaries.
-              </p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
-                data-youtube="https://www.youtube.com/embed/ZCxC_cOZwdQ" title="Read & Process Emails" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video7-title">Select Webpage Content and Interpret</h3>
-              <p id="feature-video7-desc" class="desc">Select content on a target webpage; AI interprets and extracts
-                key points in real time and can generate summaries and action items.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
-                data-youtube="https://www.youtube.com/embed/rPDaW34xLuk" title="Select Webpage Content and Interpret"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video8-title">Task Reminders & Todo System</h3>
-              <p id="feature-video8-desc" class="desc">
-                Custom task reminders to help you remember work and notify you at the right time; can integrate with
-                webpage actions and content interpretation.
-              </p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video"
-                src="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
-                data-youtube="https://www.youtube.com/embed/5MIi5DdOtis" title="Task Reminders & Todo System"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video11-title">Complex Multi-task Orchestration</h3>
-              <p id="feature-video11-desc" class="desc">Demonstrates orchestrating and executing complex multi-step
-                tasks with constraints and dependencies.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video" src="https://www.youtube.com/embed/anpAHnJelKI"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1L3zFBWEy1&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.6"
-                data-youtube="https://www.youtube.com/embed/anpAHnJelKI"
-                title="Complex Multi-task Orchestration & Execution" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
-            </div>
-          </div>
-
-          <div class="demo-row">
-            <div class="demo-text">
-              <h3 id="feature-video12-title">Save Your Bookmarks in 1 Minute</h3>
-              <p id="feature-video12-desc" class="desc">If your bookmarks are a mess, now there’s hope.</p>
-            </div>
-            <div class="demo-media">
-              <iframe class="video" src="https://www.youtube.com/embed/7z476yYFErM"
-                data-bili="https://player.bilibili.com/player.html?bvid=BV1g3zzBdEdg&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=7.5"
-                data-youtube="https://www.youtube.com/embed/7z476yYFErM" title="Save Your Chaotic Bookmarks in 1 Minute"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
+            <div class="card">
+              <h3 id="features-multimodal-title">Multimodal Support</h3>
+              <p id="features-multimodal-desc">Automatically understand and extract from video, images, and documents to produce structured outputs.</p>
             </div>
           </div>
         </div>
-        <script>
-          (function () {
-            var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[data-bili]"));
+      </section>
 
-            function preferredIsZh() {
-              var saved;
-              try {
-                saved = localStorage.getItem("beLang");
-              } catch (e) { }
-              var lang = saved || navigator.language || navigator.userLanguage || "";
-              return (lang || "").toLowerCase().indexOf("zh") === 0;
-            }
+      <section id="scenes" class="section alt">
+        <div class="container">
+          <h2 id="scenes-title">Use Cases</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3 id="scenes-research-title">Market Research</h3>
+              <p id="scenes-research-desc">Auto-open sites and extract key information; aggregate competitor pricing, features, and announcements in one click.</p>
+            </div>
+            <div class="card">
+              <h3 id="scenes-content-title">Content Creation</h3>
+              <p id="scenes-content-desc">Read reference articles to generate originals, synthesize deep pieces from multiple pages, and auto-extract video & image content.</p>
+            </div>
+            <div class="card">
+              <h3 id="scenes-commerce-title">E-commerce & Ops</h3>
+              <p id="scenes-commerce-desc">Analyze reviews, compare competitors, and auto-publish; if you can click it, AI can click it for you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            function setSource(forceBili) {
-              var prefersCn = preferredIsZh();
-              frames.forEach(function (frame) {
-                var bili = frame.getAttribute("data-bili");
-                var yt = frame.getAttribute("data-youtube");
-                var useBili = forceBili || prefersCn || !yt;
-                var target = useBili ? bili : yt;
-                if (target && frame.src !== target) {
-                  frame.src = target;
+      <section id="feature" class="section feature-section">
+        <div class="container">
+          <h2 id="feature-hero-title">Automatic Web Form Understanding & Filling</h2>
+          <p id="feature-hero-desc" class="desc">BlackEagle reads webpage semantics and field structures to automate multi-step form flows like clicking, filling, and navigation.</p>
+          <div class="demo-grid">
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video-title">Demo Videos</h3>
+                <p id="feature-video-desc" class="desc">BlackEagle reads webpage semantics and field structures to automate multi-step form flows like clicking, filling, and navigation.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1d8roBWEqs&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.0"
+                  data-youtube="https://www.youtube.com/embed/v7uHzhgySfQ"
+                  title="Automatic form filling & webpage actions"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video9-title">Turn Web Content into Images</h3>
+                <p id="feature-video9-desc" class="desc">
+                  Generate 4-panel comics, illustrations, or multi-style images (not screenshots) by truly understanding page semantics. Demo video coming soon—stay tuned.
+                </p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://www.youtube.com/embed/um1t-0mJygQ"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV14nrkBPE9o&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=3.3"
+                  data-youtube="https://www.youtube.com/embed/um1t-0mJygQ"
+                  title="Turn a webpage into a 4-panel comic"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video2-title">Auto-interpret Hard-to-read Web Content</h3>
+                <p id="feature-video2-desc" class="desc">Help interpret obscure or technical webpage content, extracting key points and recommended actions.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1otroBREir&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=29.4"
+                  data-youtube="https://www.youtube.com/embed/Mihe8nXUxS8"
+                  title="Auto-interpret Hard-to-read Web Content"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video10-title">One-click Summarize and Export to Notion</h3>
+                <p id="feature-video10-desc" class="desc">One-click summarize page content and export translated results to your Notion for saving and reuse.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1eMkjBgEQu&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.9"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1eMkjBgEQu&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.9"
+                  data-youtube="https://www.youtube.com/embed/u3TPMtbDahE"
+                  title="One-click Summarize and Export to Notion"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video3-title">Auto-generate Articles and Export</h3>
+                <p id="feature-video3-desc" class="desc">Write articles based on webpage content, automatically organize and export as documents for easy editing and sharing.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREid&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=1.2"
+                  data-youtube="https://www.youtube.com/embed/h-KhNkPeStI"
+                  title="Auto-generate Articles and Export"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video4-title">Local Large-PDF Summarization</h3>
+                <p id="feature-video4-desc" class="desc">Parse and summarize very large PDFs locally, quickly extracting key points and conclusions while keeping data private.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBRE7C&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=31.6"
+                  data-youtube="https://www.youtube.com/embed/e-2P8f3vbZg"
+                  title="Local large-PDF summarization"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video5-title">Local/Web Video Reading & Summarization</h3>
+                <p id="feature-video5-desc" class="desc">
+                  Supports reading local video files or online videos on webpages, extracting key points, reading subtitles, and directly generating articles.
+                </p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1qtroBREP7&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=17.3"
+                  data-youtube="https://www.youtube.com/embed/tnaK5k8WSF0"
+                  title="Local/Web Video Reading & Summarization"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video6-title">Read & Process Emails</h3>
+                <p id="feature-video6-desc" class="desc">
+                  Automatically read your emails, identify and handle tasks; supports parsing images and resources in emails and generating replies or summaries.
+                </p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZq&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=64.9"
+                  data-youtube="https://www.youtube.com/embed/ZCxC_cOZwdQ"
+                  title="Read & Process Emails"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video7-title">Select Webpage Content and Interpret</h3>
+                <p id="feature-video7-desc" class="desc">Select content on a target webpage; AI interprets and extracts key points in real time and can generate summaries and action items.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREvB&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=0.9"
+                  data-youtube="https://www.youtube.com/embed/rPDaW34xLuk"
+                  title="Select Webpage Content and Interpret"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video8-title">Task Reminders & Todo System</h3>
+                <p id="feature-video8-desc" class="desc">
+                  Custom task reminders to help you remember work and notify you at the right time; can integrate with webpage actions and content interpretation.
+                </p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1itroBREZh&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=16.6"
+                  data-youtube="https://www.youtube.com/embed/5MIi5DdOtis"
+                  title="Task Reminders & Todo System"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video11-title">Complex Multi-task Orchestration</h3>
+                <p id="feature-video11-desc" class="desc">Demonstrates orchestrating and executing complex multi-step tasks with constraints and dependencies.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://www.youtube.com/embed/anpAHnJelKI"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1L3zFBWEy1&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=2.6"
+                  data-youtube="https://www.youtube.com/embed/anpAHnJelKI"
+                  title="Complex Multi-task Orchestration & Execution"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="demo-row">
+              <div class="demo-text">
+                <h3 id="feature-video12-title">Save Your Bookmarks in 1 Minute</h3>
+                <p id="feature-video12-desc" class="desc">If your bookmarks are a mess, now there’s hope.</p>
+              </div>
+              <div class="demo-media">
+                <iframe
+                  class="video"
+                  src="https://www.youtube.com/embed/7z476yYFErM"
+                  data-bili="https://player.bilibili.com/player.html?bvid=BV1g3zzBdEdg&amp;page=1&amp;high_quality=1&amp;danmaku=0&amp;t=7.5"
+                  data-youtube="https://www.youtube.com/embed/7z476yYFErM"
+                  title="Save Your Chaotic Bookmarks in 1 Minute"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[data-bili]"));
+
+              function preferredIsZh() {
+                var saved;
+                try {
+                  saved = localStorage.getItem("beLang");
+                } catch (e) {}
+                var lang = saved || navigator.language || navigator.userLanguage || "";
+                return (lang || "").toLowerCase().indexOf("zh") === 0;
+              }
+
+              function setSource(forceBili) {
+                var prefersCn = preferredIsZh();
+                frames.forEach(function (frame) {
+                  var bili = frame.getAttribute("data-bili");
+                  var yt = frame.getAttribute("data-youtube");
+                  var useBili = forceBili || prefersCn || !yt;
+                  var target = useBili ? bili : yt;
+                  if (target && frame.src !== target) {
+                    frame.src = target;
+                  }
+                });
+              }
+
+              setSource(false);
+
+              var timeout = setTimeout(function () {
+                setSource(true);
+              }, 3000);
+
+              fetch("https://www.youtube.com/generate_204", { mode: "no-cors" })
+                .then(function () {
+                  clearTimeout(timeout);
+                })
+                .catch(function () {
+                  clearTimeout(timeout);
+                  setSource(true);
+                });
+
+              var langToggle = document.getElementById("lang-toggle");
+              if (langToggle) {
+                langToggle.addEventListener("click", function () {
+                  setTimeout(function () {
+                    setSource(false);
+                  }, 0);
+                });
+              }
+
+              window.addEventListener("storage", function (ev) {
+                if (ev.key === "beLang") {
+                  setSource(false);
                 }
               });
-            }
+            })();
+          </script>
+        </div>
+      </section>
 
-            setSource(false);
+      <section id="download" class="section download">
+        <div class="container">
+          <h2 id="download-title">Download & Installation</h2>
+          <p id="download-desc" class="desc">BlackEagle supports Chrome and Edge. Downloads are available on GitHub Releases.</p>
+          <a href="install-offline.html" id="offline-meta-description">Learn more about offline installation</a>
+          <p id="tips" class="tips">Tip: Prefer using your own LLM Endpoint + API Key for a faster, safer, and more personalized experience.</p>
+        </div>
+      </section>
+    </main>
 
-            var timeout = setTimeout(function () {
-              setSource(true);
-            }, 3000);
-
-            fetch("https://www.youtube.com/generate_204", { mode: "no-cors" })
-              .then(function () {
-                clearTimeout(timeout);
-              })
-              .catch(function () {
-                clearTimeout(timeout);
-                setSource(true);
-              });
-
-            var langToggle = document.getElementById("lang-toggle");
-            if (langToggle) {
-              langToggle.addEventListener("click", function () {
-                setTimeout(function () {
-                  setSource(false);
-                }, 0);
-              });
-            }
-
-            window.addEventListener("storage", function (ev) {
-              if (ev.key === "beLang") {
-                setSource(false);
-              }
-            });
-          })();
-        </script>
-      </div>
-    </section>
-
-    <section id="download" class="section download">
+    <footer class="site-footer">
       <div class="container">
-        <h2 id="download-title">Download & Installation</h2>
-        <p id="download-desc" class="desc">BlackEagle supports Chrome and Edge. Downloads are available on GitHub
-          Releases.</p>
-        <a href="install-offline.html" id="offline-meta-description">Learn more about offline installation</a>
-        <p id="tips" class="tips">Tip: Prefer using your own LLM Endpoint + API Key for a faster, safer, and more
-          personalized experience.</p>
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a
+            id="footer-producthunt"
+            href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
+            />
+          </a>
+          <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
+            <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
+          </a>
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="tutorial.html">Setup Guide</a>
+          <a id="footer-support" href="support.html">Support & Privacy</a>
+          <a id="footer-discord" href="https://discord.gg/tEt97Txhfn" target="_blank" rel="noopener">Discord</a>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <div class="copy">
-        © 2026 BlackEagle. Local-first · Privacy-first.
-        <a id="footer-producthunt"
-          href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
-          target="_blank" rel="noopener noreferrer"><img
-            alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt" width="250"
-            height="54"
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864" /></a>
-        <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer"
-          style="text-decoration: none;"><img src="https://findyouragent.ai/embed-badge-gradient.svg"
-            alt="FindYourAgent Logo" style="height: 10%; width: auto;" /></a>
-        <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub
-          Feedback</a>
-        <a id="footer-tutorial" href="tutorial.html">Setup Guide</a>
-        <a id="footer-support" href="support.html">Support & Privacy</a>
-        <a id="footer-discord" href="https://discord.gg/tEt97Txhfn" target="_blank" rel="noopener">Discord</a>
-      </div>
-    </div>
-  </footer>
-  <script src="i18n.js"></script>
-</body>
-
+    </footer>
+    <script src="i18n.js"></script>
+  </body>
 </html>

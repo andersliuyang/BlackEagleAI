@@ -1,134 +1,144 @@
 <!doctype html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlackEagle — Offline ZIP Installation Guide</title>
+    <meta name="description" content="Instructions for installing the BlackEagle extension offline via ZIP in Chrome / Edge." />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Normalize footer badge sizes */
+      #footer-producthunt img,
+      #footer-findyouragent img {
+        height: 40px;
+        width: auto;
+        max-width: 220px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      @media (max-width: 480px) {
+        #footer-producthunt img,
+        #footer-findyouragent img {
+          height: 32px;
+          max-width: 160px;
+        }
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlackEagle — Offline ZIP Installation Guide</title>
-  <meta name="description"
-    content="Instructions for installing the BlackEagle extension offline via ZIP in Chrome / Edge." />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body data-page="offline">
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <nav class="top-nav">
-        <a id="nav-home" href="index.html">Home</a>
-        <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
+  <body data-page="offline">
+    <header class="site-header">
       <div class="container">
-        <h1 id="offline-hero-title">Chrome / Edge Offline Installation (ZIP)</h1>
-        <p id="offline-hero-desc" class="desc">No store required—download BlackEagle.zip, extract it, and load the
-          unpacked extension in your browser.</p>
-        <div class="cta">
-          <a id="offline-cta-download" class="btn btn-primary"
-            href="https://blackeagle.app887.com/blackeagle%20v0.1.0.6.zip" type="application/zip">Download
-            BlackEagle.zip</a>
-          <a id="offline-cta-back" class="btn btn-secondary" href="index.html">Back to Home</a>
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
         </div>
+        <nav class="top-nav">
+          <a id="nav-home" href="index.html">Home</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
-      <div class="container">
-        <h2 id="offline-chrome-title">Chrome Installation Steps (ZIP)</h2>
-        <div class="grid">
-          <div class="card">
-            <ol>
-              <li id="offline-chrome-step1">Download and extract <span class="mono">BlackEagle.zip</span> to any local
-                folder.</li>
-              <li id="offline-chrome-step2">Open <span class="mono">chrome://extensions</span> in the address bar and
-                enable "Developer mode".</li>
-              <li id="offline-chrome-step3">Click "Load unpacked" and select the extracted folder.</li>
-              <li id="offline-chrome-step4">After loading, pin the BlackEagle icon to the browser toolbar to use it.
-              </li>
-            </ol>
-          </div>
-          <div class="card">
-            <h3 id="offline-chrome-update-title">Updating to a new version</h3>
-            <p id="offline-chrome-update-desc">Download the new ZIP, extract to a new folder, remove the old version on
-              the extensions page, then load the new unpacked extension.</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 id="offline-hero-title">Chrome / Edge Offline Installation (ZIP)</h1>
+          <p id="offline-hero-desc" class="desc">No store required—download BlackEagle.zip, extract it, and load the unpacked extension in your browser.</p>
+          <div class="cta">
+            <a id="offline-cta-download" class="btn btn-primary" href="https://blackeagle.app887.com/blackeagle%20v0.1.0.6.zip" type="application/zip">Download BlackEagle.zip</a>
+            <a id="offline-cta-back" class="btn btn-secondary" href="index.html">Back to Home</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt">
-      <div class="container">
-        <h2 id="offline-edge-title">Edge Installation Steps (ZIP)</h2>
-        <div class="grid">
-          <div class="card">
-            <ol>
-              <li id="offline-edge-step1">Download and extract <span class="mono">BlackEagle.zip</span>.</li>
-              <li id="offline-edge-step2">Open <span class="mono">edge://extensions</span> and enable "Developer mode".
-              </li>
-              <li id="offline-edge-step3">Click "Load unpacked" and choose the extracted folder.</li>
-              <li id="offline-edge-step4">After installation, pin BlackEagle to the toolbar for quick access.</li>
-            </ol>
-          </div>
-          <div class="card">
-            <h3 id="offline-edge-faq-title">Common issues</h3>
-            <ul>
-              <li id="offline-edge-faq-1">Can't load? Make sure you selected the root of the extracted folder.</li>
-              <li id="offline-edge-faq-2">Button is disabled? Ensure "Developer mode" is enabled.</li>
-              <li id="offline-edge-faq-3">Version conflict after upgrade? Remove the old version first, then load the
-                new folder.</li>
-            </ul>
+      <section class="section">
+        <div class="container">
+          <h2 id="offline-chrome-title">Chrome Installation Steps (ZIP)</h2>
+          <div class="grid">
+            <div class="card">
+              <ol>
+                <li id="offline-chrome-step1">Download and extract <span class="mono">BlackEagle.zip</span> to any local folder.</li>
+                <li id="offline-chrome-step2">Open <span class="mono">chrome://extensions</span> in the address bar and enable "Developer mode".</li>
+                <li id="offline-chrome-step3">Click "Load unpacked" and select the extracted folder.</li>
+                <li id="offline-chrome-step4">After loading, pin the BlackEagle icon to the browser toolbar to use it.</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3 id="offline-chrome-update-title">Updating to a new version</h3>
+              <p id="offline-chrome-update-desc">Download the new ZIP, extract to a new folder, remove the old version on the extensions page, then load the new unpacked extension.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 id="offline-check-title">Quick checklist</h2>
-        <div class="grid">
-          <div class="card">
-            <p id="offline-check-1">ZIP has been extracted locally, and you selected the extracted folder.</p>
-            <p id="offline-check-2">Developer mode is enabled on the browser extensions page.</p>
-            <p id="offline-check-3">After installation, enter your LLM Endpoint + API Key in settings to complete
-              configuration.</p>
+      <section class="section alt">
+        <div class="container">
+          <h2 id="offline-edge-title">Edge Installation Steps (ZIP)</h2>
+          <div class="grid">
+            <div class="card">
+              <ol>
+                <li id="offline-edge-step1">Download and extract <span class="mono">BlackEagle.zip</span>.</li>
+                <li id="offline-edge-step2">Open <span class="mono">edge://extensions</span> and enable "Developer mode".</li>
+                <li id="offline-edge-step3">Click "Load unpacked" and choose the extracted folder.</li>
+                <li id="offline-edge-step4">After installation, pin BlackEagle to the toolbar for quick access.</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3 id="offline-edge-faq-title">Common issues</h3>
+              <ul>
+                <li id="offline-edge-faq-1">Can't load? Make sure you selected the root of the extracted folder.</li>
+                <li id="offline-edge-faq-2">Button is disabled? Ensure "Developer mode" is enabled.</li>
+                <li id="offline-edge-faq-3">Version conflict after upgrade? Remove the old version first, then load the new folder.</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="brand">
-        <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
-        <span class="name">BlackEagle</span>
-      </div>
-      <div class="copy">
-        © 2026 BlackEagle. Local-first · Privacy-first.
-        <a id="offline-footer-home" href="index.html">Back to Home</a>
-        <a id="footer-producthunt"
-          href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
-          target="_blank" rel="noopener noreferrer"><img
-            alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt" width="250"
-            height="54"
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864" /></a>
-        <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer"
-          style="text-decoration: none;"><img src="https://findyouragent.ai/embed-badge-gradient.svg"
-            alt="FindYourAgent Logo" style="height: 10%; width: auto;" /></a>
-        <a href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </footer>
-  <script src="i18n.js"></script>
-</body>
+      <section class="section">
+        <div class="container">
+          <h2 id="offline-check-title">Quick checklist</h2>
+          <div class="grid">
+            <div class="card">
+              <p id="offline-check-1">ZIP has been extracted locally, and you selected the extracted folder.</p>
+              <p id="offline-check-2">Developer mode is enabled on the browser extensions page.</p>
+              <p id="offline-check-3">After installation, enter your LLM Endpoint + API Key in settings to complete configuration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a id="offline-footer-home" href="index.html">Back to Home</a>
+          <a
+            id="footer-producthunt"
+            href="https://www.producthunt.com/products/blackeagle-your-ai-browser-assistant?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-blackeagle-your-personal-ai-browser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="BlackEagle - Your Personal AI Browser - Your Personal AI Browser | Product Hunt"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1063294&amp;theme=light&amp;t=1768633276864"
+            />
+          </a>
+          <a id="footer-findyouragent" href="https://findyouragent.ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
+            <img src="https://findyouragent.ai/embed-badge-gradient.svg" alt="FindYourAgent Logo" />
+          </a>
+          <a href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script src="i18n.js"></script>
+  </body>
 </html>
