@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Local key mode for privacy: how clawdbot (OS assistant) and BlackEagleAI (browser automation) complement each other in a local-first workflow." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Privacy-first Local Key: From clawdbot to Browser Automation</title>
+    <link rel="canonical" href="https://blackeagle.cozyai.chat/blog/clawdbot-local-key.html" />
+    <link rel="icon" href="../assets/icon.ico" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-page="blog-post-clawdbot">
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <nav class="top-nav">
+          <a id="nav-home" href="../index.html">Home</a>
+          <a id="nav-blog" href="index.html">Blog</a>
+          <a id="lang-toggle" href="#" class="btn btn-outline" aria-label="Toggle language">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 id="blog-post-clawdbot-title">Privacy-first Local Key: From clawdbot to Browser Automation</h1>
+          <p id="blog-post-clawdbot-intro" class="desc">
+            Local key keeps API keys and traffic on your device. This post distills why it matters, how clawdbot (OS-level) and BlackEagleAI (browser-level) divide the work, and how privacy-minded
+            users can combine them.
+          </p>
+
+          <h2 id="blog-post-clawdbot-why-title">1. Why Local Key stays non-negotiable</h2>
+          <p id="blog-post-clawdbot-why-desc">Local key returns digital sovereignty to the user — your credentials and content do not transit third-party servers.</p>
+          <ul id="blog-post-clawdbot-why-list">
+            <li id="blog-post-clawdbot-why-item1">Zero relay: API keys stay on-device; calls are sent directly to the model endpoint you trust.</li>
+            <li id="blog-post-clawdbot-why-item2">Direct dialogue: requests leave from your IP, without hidden caches or intermediaries.</li>
+            <li id="blog-post-clawdbot-why-item3">Transparent control: storage and deletion are in your hands; no opaque logging or auditing.</li>
+          </ul>
+          <blockquote id="blog-post-clawdbot-quote"><p>When the key never leaves your machine, privacy is a feature — not a promise.</p></blockquote>
+
+          <h2 id="blog-post-clawdbot-diff-title">2. Complementary roles: OS assistant vs. browser agent</h2>
+          <p id="blog-post-clawdbot-diff-desc">Same local-first principle, different layers of work.</p>
+          <h3 id="blog-post-clawdbot-os-title">clawdbot (OS assistant)</h3>
+          <p id="blog-post-clawdbot-os-desc">Acts like an AI sysadmin: spans apps, manages local files, triggers system commands, and coordinates cross-app tasks.</p>
+          <h3 id="blog-post-clawdbot-browser-title">BlackEagleAI (browser plugin)</h3>
+          <p id="blog-post-clawdbot-browser-desc">Built for the web layer: understands live DOMs, handles dynamic pages, auto-fills complex forms, and runs web-native action flows.</p>
+
+          <h2 id="blog-post-clawdbot-stack-title">3. A privacy-friendly toolchain for everyday work</h2>
+          <p id="blog-post-clawdbot-stack-desc">Use both together to mirror real workflows while keeping keys local.</p>
+          <ul id="blog-post-clawdbot-stack-list">
+            <li id="blog-post-clawdbot-stack-item1">Global orchestration → clawdbot: schedule tasks, manage local files, call system APIs.</li>
+            <li id="blog-post-clawdbot-stack-item2">In-browser interaction → BlackEagleAI: parse pages, auto-fill, read long articles, and automate on-page actions.</li>
+            <li id="blog-post-clawdbot-stack-item3">Local-first habit → keep keys and configs on-device; disable unnecessary relays to preserve sovereignty.</li>
+          </ul>
+
+          <h2 id="blog-post-clawdbot-conclusion-title">Conclusion: same philosophy, two puzzle pieces</h2>
+          <p id="blog-post-clawdbot-conclusion-desc">This is not a zero-sum contest. Pair an OS-level assistant with a browser-level agent to build a transparent, privacy-first workflow.</p>
+          <blockquote id="blog-post-clawdbot-conclusion-quote"><p>Local Key = your data, your rules.</p></blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand">
+          <img class="logo-img" src="../assets/logo.png" alt="BlackEagle logo" />
+          <span class="name">BlackEagle</span>
+        </div>
+        <div class="copy">
+          © 2026 BlackEagle. Local-first · Privacy-first.
+          <a id="footer-feedback" href="https://github.com/andersliuyang/BlackEagle" target="_blank" rel="noopener">GitHub Feedback</a>
+          <a id="footer-tutorial" href="../tutorial.html">Setup Guide</a>
+          <a id="footer-support" href="../support.html">Support & Privacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../i18n.js"></script>
+  </body>
+</html>
