@@ -234,6 +234,7 @@
       "blog-hero-title": "博客与使用文章",
       "blog-hero-desc": "持续更新：真实场景下的功能操作与最佳实践。",
       "blog-list-title": "最新文章",
+      "blog-view-all": "查看全部文章",
 
       /* Blog: 4-panel comic post */
       "blog-post-comic-page-title": "通过网页生成四格漫画 — 操作指南",
@@ -687,6 +688,7 @@
       "blog-hero-title": "Blog & Usage Guides",
       "blog-hero-desc": "Ongoing updates: real‑world workflows and best practices.",
       "blog-list-title": "Latest Posts",
+      "blog-view-all": "View all posts",
 
       /* Blog: 4-panel comic post */
       "blog-post-comic-page-title": "Generate a 4‑Panel Comic from Any Webpage",
@@ -1184,6 +1186,7 @@
       "blog-hero-title",
       "blog-hero-desc",
       "blog-list-title",
+      "blog-view-all",
       "blog-post-comic-title",
       "blog-post-comic-intro",
       "blog-post-comic-step1",
