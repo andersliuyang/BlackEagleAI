@@ -188,6 +188,19 @@ body {
   margin: 0 auto 28px;
   color: var(--muted);
 }
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
 .hero-logo {
   height: 120px;
   width: auto;
@@ -213,6 +226,19 @@ body {
 }
 .btn-primary:hover {
   filter: brightness(1.05);
+}
+.btn-accent {
+  background: linear-gradient(90deg, #10b981, #22c55e);
+  color: #06271d;
+  box-shadow: 0 10px 24px rgba(16, 185, 129, 0.35);
+}
+.btn-accent:hover {
+  filter: brightness(1.05);
+}
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 .btn-secondary {
   background: linear-gradient(90deg, #0ea5e9, #22d3ee);
