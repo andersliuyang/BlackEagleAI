@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>成语接龙计时挑战</title>
+    <link rel="stylesheet" href="idiom.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section>
+        <div class="hero-text">
+          <h1>输入成语直到失败</h1>
+          <details class="intro">
+            <summary>尽量列出更多成语</summary>
+            <p class="sub">规则：输入成语直到时间结束。与已输入成语存在包含关系的词条不计分。</p>
+          </details>
+        </div>
+        <br /><br />
+        <div class="stat-card">
+          <div class="stat">
+            <span id="time-left" class="value">--</span>
+          </div>
+          <div class="stat">得分<span id="score" class="value">0</span></div>
+        </div>
+      </section>
+
+      <section class="game">
+        <div class="input-card">
+          <div id="input-message" class="input-message" aria-live="polite"></div>
+          <div class="input-row">
+            <input id="idiom-input" type="text" autocomplete="off" placeholder="" autofocus />
+          </div>
+          <div id="feedback" class="feedback" aria-hidden="true"></div>
+        </div>
+        <div class="list-card">
+          <ul id="accepted-list" class="list"></ul>
+        </div>
+      </section>
+
+      <section class="history"></section>
+    </main>
+
+    <script src="idiom_words.js"></script>
+    <script src="idiom.js"></script>
+  </body>
+</html>
