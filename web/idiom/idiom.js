@@ -1,6 +1,12 @@
 const START_SECONDS = 60;
 const BONUS_SECONDS = 5;
 const TIMER_INTERVAL = 100;
+const SCORE_TIERS = [
+  { minStreak: 8, multiplier: 4 },
+  { minStreak: 5, multiplier: 3 },
+  { minStreak: 3, multiplier: 2 },
+  { minStreak: 1, multiplier: 1 },
+];
 
 const inputEl = document.getElementById("idiom-input");
 const feedbackEl = document.getElementById("feedback");
@@ -19,6 +25,7 @@ let score = 0;
 let accepted = [];
 let acceptedSet = new Set();
 let hasStarted = false;
+let streak = 0;
 
 function triggerScreenShake() {
   document.body.classList.remove("shake-screen");
@@ -30,17 +37,26 @@ function setBackgroundDim(isDim) {
   document.body.classList.toggle("bg-dim", isDim);
 }
 
-function spawnScorePop() {
+function spawnScorePop(points, multiplier) {
   if (!inputCardEl) {
     return;
   }
   const pop = document.createElement("span");
   pop.className = "score-pop";
-  pop.textContent = "+1";
+  pop.textContent = multiplier > 1 ? `+${points} x${multiplier}` : `+${points}`;
   inputCardEl.appendChild(pop);
   pop.addEventListener("animationend", () => {
     pop.remove();
   });
+}
+
+function getScoreMultiplier(currentStreak) {
+  for (const tier of SCORE_TIERS) {
+    if (currentStreak >= tier.minStreak) {
+      return tier.multiplier;
+    }
+  }
+  return 1;
 }
 
 function appendAccepted(value) {
@@ -109,6 +125,7 @@ function startGame() {
   score = 0;
   accepted = [];
   acceptedSet = new Set();
+  streak = 0;
   timeLeft = START_SECONDS;
   updateStats();
   inputEl.focus();
@@ -135,6 +152,7 @@ function submitInput() {
     triggerScreenShake();
     setBackgroundDim(true);
     showMessage("请输入成语");
+    streak = 0;
     return;
   }
   if (!idiomSet.has(value)) {
@@ -142,6 +160,7 @@ function submitInput() {
     setBackgroundDim(true);
     showMessage("不存在这个成语");
     inputEl.select();
+    streak = 0;
     return;
   }
   if (acceptedSet.has(value)) {
@@ -149,6 +168,7 @@ function submitInput() {
     setBackgroundDim(true);
     showMessage("已经存在了");
     inputEl.select();
+    streak = 0;
     return;
   }
   const overlap = isOverlapping(value);
@@ -157,16 +177,20 @@ function submitInput() {
     setBackgroundDim(true);
     showMessage("不存在这个成语");
     inputEl.select();
+    streak = 0;
     return;
   }
 
   accepted.push(value);
   acceptedSet.add(value);
-  score += 1;
+  streak += 1;
+  const multiplier = getScoreMultiplier(streak);
+  const points = 1 * multiplier;
+  score += points;
   timeLeft += BONUS_SECONDS;
   showMessage("");
   setBackgroundDim(false);
-  spawnScorePop();
+  spawnScorePop(points, multiplier);
   appendAccepted(value);
   inputEl.value = "";
   updateStats();
