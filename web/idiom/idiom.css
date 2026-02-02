@@ -176,6 +176,11 @@ body.shake-screen {
 .stat .value {
   font-size: 1.6rem;
   font-weight: 700;
+  display: inline-block;
+}
+
+#score.score-bump {
+  animation: score-bump 0.35s ease;
 }
 
 .game,
@@ -364,6 +369,18 @@ input[type="text"]:focus {
   100% {
     opacity: 0;
     transform: translate(-50%, -16px) scale(1);
+  }
+}
+
+@keyframes score-bump {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

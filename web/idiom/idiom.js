@@ -1,6 +1,7 @@
 const START_SECONDS = 60;
 const BONUS_SECONDS = 5;
 const TIMER_INTERVAL = 100;
+const BASE_POINTS = 5;
 const SCORE_TIERS = [
   { minStreak: 8, multiplier: 4 },
   { minStreak: 5, multiplier: 3 },
@@ -48,6 +49,15 @@ function spawnScorePop(points, multiplier) {
   pop.addEventListener("animationend", () => {
     pop.remove();
   });
+}
+
+function bumpScore() {
+  if (!scoreEl) {
+    return;
+  }
+  scoreEl.classList.remove("score-bump");
+  void scoreEl.offsetWidth;
+  scoreEl.classList.add("score-bump");
 }
 
 function getScoreMultiplier(currentStreak) {
@@ -185,12 +195,13 @@ function submitInput() {
   acceptedSet.add(value);
   streak += 1;
   const multiplier = getScoreMultiplier(streak);
-  const points = 1 * multiplier;
+  const points = BASE_POINTS * multiplier;
   score += points;
   timeLeft += BONUS_SECONDS;
   showMessage("");
   setBackgroundDim(false);
   spawnScorePop(points, multiplier);
+  bumpScore();
   appendAccepted(value);
   inputEl.value = "";
   updateStats();
