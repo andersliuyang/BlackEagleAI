@@ -293,9 +293,12 @@ input[type="text"]:focus {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 10px;
+  text-align: left;
 }
 
 .list li {
