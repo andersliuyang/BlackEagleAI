@@ -62,13 +62,15 @@ BlackEagle runs entirely in your browser.
 - No account required
 - No tracking or analytics
 - No vendor lock-in
+- Respect for your privacy by default
 
 All webpage content stays in your browser.  
 AI requests are sent **directly** to your configured endpoint.
 
-### Bring Your Own AI
+### Bring Your Own AI (Any Model, Any Provider)
 
-BlackEagle works with any LLM provider that exposes a compatible API endpoint.
+BlackEagle works with any LLM provider that exposes a compatible API endpoint.  
+You are free to use **any** model you prefer — local or cloud — without restriction.
 
 Choose models based on:
 
@@ -102,9 +104,11 @@ No signup. No server setup.
 
 ## 🔐 Privacy & Security
 
-BlackEagle operates entirely on the client side.
+BlackEagle operates entirely on the client side and is built to **respect your privacy**.
 
 - Web content is processed locally
+- No centralized data collection
+- You control which AI endpoint receives requests
 
 ---
 
