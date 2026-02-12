@@ -514,21 +514,23 @@ body {
   color: #d97706;
 }
 
-/* Fixed-height footer to avoid layout shifts when English/Latin text causes different line metrics. */
+/* Footer keeps a stable background while allowing content to wrap in English layouts. */
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 0; /* use fixed height instead of vertical padding */
-  height: 88px; /* fixed desktop footer height */
-  background: rgba(255, 255, 255, 0.02);
+  padding: 12px 0;
+  min-height: 88px;
+  max-height: 88px;
+  background: var(--bg-alt);
   box-sizing: border-box;
+  display: flex;
 }
 .site-footer .container {
   display: flex;
   align-items: center; /* vertically center content within fixed-height footer */
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   flex-wrap: wrap;
-  min-height: 88px;
+  min-height: 0;
 }
 .site-footer .brand {
   display: flex;
@@ -542,9 +544,12 @@ body {
   line-height: 1.4; /* stable line-height for mixed-language text */
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 8px;
-  flex: 1 1 60%; /* allow copy area to shrink/grow but keep layout stable */
+  flex-wrap: wrap;
+  flex: 1 1 auto; /* keep content left-aligned */
   word-break: keep-all; /* prefer keeping words intact for latin text */
+  text-align: left;
 }
 .site-footer .copy a {
   color: #7dd3fc; /* lighter cyan for better contrast */
