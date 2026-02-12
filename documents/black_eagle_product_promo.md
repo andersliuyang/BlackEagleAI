@@ -108,3 +108,12 @@
 ---
 
 **BlackEagle AI，不止是工具，更是您在数字世界的智能延伸。立即体验，开启您的AI增强新纪元。**
+
+官网:https://blackeagle.cozyai.chat/
+
+桌面版下载地址:https://blackeagle.app887.com/BlackEagleAI%20Setup%200.1.0.exe.zip
+网页版地址:https://app.cozyai.chat/blackeagle
+Microsoft Edge 插件商店已上线地址:
+https://microsoftedge.microsoft.com/addons/detail/blackeagleai/nfnonndhjocfbdekdffinapjnakjinen
+Google Chrome 插件商店已上线地址:
+https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb
