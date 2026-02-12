@@ -4,7 +4,16 @@ Allow: /
 # Explicitly allow blog section
 Allow: /blog/
 
+# Explicitly allow newly added pages
+Allow: /client.html
+Allow: /extension.html
+Allow: /llm-config.html
+Allow: /webapp.html
+Allow: /blog/aiarticle.html
+Allow: /blog/clawdbot-local-key.html
+Allow: /baidu_verify_codeva-h92sYaqncI.html
+
 # Sitemap
 Sitemap: https://blackeagle.cozyai.chat/sitemap.xml
 
-# Generated on 2026-01-21
+# Generated on 2026-02-12
