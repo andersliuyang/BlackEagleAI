@@ -46,6 +46,14 @@
 .demo-row:nth-child(even) {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(99, 102, 241, 0.04));
 }
+.home-blog-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
 @media (max-width: 900px) {
   .demo-row {
     grid-template-columns: 1fr;
@@ -59,6 +67,20 @@
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.6;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.list a {
+  text-decoration: none;
+}
+.list a:hover {
+  text-decoration: underline;
 }
 .support-list strong {
   color: var(--text);
@@ -106,18 +128,15 @@ body {
 body {
   margin: 0;
   font-family:
+    "Space Grotesk",
+    "Plus Jakarta Sans",
+    "IBM Plex Sans",
+    "Segoe UI",
+    "PingFang SC",
+    "Noto Sans SC",
     ui-sans-serif,
     system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    Ubuntu,
-    Cantarell,
-    Noto Sans,
-    "Helvetica Neue",
-    Arial,
-    "Apple Color Emoji",
-    "Segoe UI Emoji";
+    -apple-system;
   background: radial-gradient(1200px 600px at 20% -10%, #15213c 0%, transparent 60%), radial-gradient(900px 500px at 80% 10%, #0b1c32 0%, transparent 60%), var(--bg);
   color: var(--text);
 }
@@ -145,6 +164,10 @@ body {
   align-items: center;
   gap: 10px;
   font-weight: 700;
+}
+.brand-link {
+  text-decoration: none;
+  color: inherit;
 }
 .brand .logo-img {
   height: 22px;
@@ -207,6 +230,10 @@ body {
   margin: 8px auto 0;
   display: block;
   filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+}
+
+.home-hero .container {
+  animation: riseIn 0.8s ease both;
 }
 
 .btn {
@@ -317,6 +344,23 @@ body {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+.card .btn {
+  margin-top: 14px;
+}
+.card .desc + .desc {
+  margin-top: 10px;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .download .steps {
