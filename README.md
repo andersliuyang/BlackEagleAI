@@ -38,7 +38,7 @@ The BlackEagle ecosystem includes three core products that can operate independe
   - **Deep System Integration**: Can read/write local files, launch applications, and operate the clipboard.
   - **Autonomous Task Planning**: Can automatically break down complex instructions into an action plan and execute it step-by-step.
   - **Powerful Document & Knowledge Base**: Deeply analyzes local documents like PDFs and Word files, and can seamlessly connect to your Notion.
-- **How to Download**: Go to [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) or the official website to download.
+- **How to Download**: Download packages are available in this repository's `bin/` directory. The WebApp is accessible from the official website: https://blackeagle.cozyai.chat/
 
 ### 3. 🌐 **BlackEagle Browser Extension: Your AI Co-pilot for Web Browsing**
 
@@ -49,7 +49,7 @@ The BlackEagle ecosystem includes three core products that can operate independe
   - **Instant Information Processing**: Instantly interpret, translate, or summarize any selected content on a web page.
   - **Web Content Re-creation**: One-click transformation of web text, images, and video content into original articles or generated images.
   - **Local-First & Secure**: Web content is not passed through third-party servers; users provide their own API Key.
-- **How to Download**: Go to [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) or the official website to download.
+- **How to Download**: Download packages are available in this repository's `bin/` directory. The WebApp is accessible from the official website: https://blackeagle.cozyai.chat/
 
 ---
 
@@ -78,7 +78,7 @@ The true power of BlackEagle lies in its ecosystem synergy. Here is a typical au
 ## 🚀 How to Get Started
 
 - **WebApp**: Simply visit [our website](https://blackeagle.cozyai.chat/) to get started.
-- **Desktop Client / Browser Extension**: Go to the [official website](https://blackeagle.cozyai.chat/) or the [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) page to download the latest version.
+- **Desktop Client / Browser Extension**: Download packages are available in this repository's `bin/` directory. The WebApp is accessible from the official website: https://blackeagle.cozyai.chat/
 
 All clients use a **Bring Your Own Key (BYOK)** model. You just need to configure your own large model API Endpoint and Key to start. No accounts, no tracking, complete control.
 
@@ -149,7 +149,7 @@ BlackEagle生态系统包含三大核心产品，它们既能独立作战，又�
   - **深度系统集成**：能够读写本地文件、启动应用程序、操作剪贴板。
   - **自主任务规划**：面对复杂指令，能自动拆解为行动计划（Plan）并逐步执行。
   - **强大的文档与知识库**：深度分析本地PDF、Word等文档，并能无缝连接到您的Notion。
-- **下载方式**: 前往 [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) 或官网下载。
+- **下载方式**：本仓库的 `bin/` 目录内包含各端安装包；WebApp 可直接通过官网访问： https://blackeagle.cozyai.chat/ 。
 
 ### 3. 🌐 **BlackEagle 浏览器插件：您的网页浏览AI副驾驶**
 
@@ -160,7 +160,7 @@ BlackEagle生态系统包含三大核心产品，它们既能独立作战，又�
   - **即时信息处理**：随时选中网页任意内容进行即时解读、翻译或总结。
   - **网页内容再创作**：一键将网页图文、视频内容转化为原创文章或生成配图。
   - **本地优先，安全可靠**：网页内容不经第三方服务器，用户自配API Key。
-- **下载方式**: 前往 [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) 或官网下载。
+- **下载方式**：本仓库的 `bin/` 目录内包含各端安装包；WebApp 可直接通过官网访问： https://blackeagle.cozyai.chat/ 。
 
 ---
 
@@ -189,7 +189,7 @@ BlackEagle的真正威力在于其生态协同能力。以下是一个典型的�
 ## 🚀 如何开始
 
 - **WebApp**: 直接访问 [我们的网站](https://blackeagle.cozyai.chat/) 即可开始使用。
-- **桌面客户端 / 浏览器插件**: 前往 [官网](https://blackeagle.cozyai.chat/) 或 [GitHub Releases](https://github.com/andersliuyang/BlackEagleAI/releases) 页面下载最新版本。
+- **桌面客户端 / 浏览器插件**：各端安装包位于本仓库的 `bin/` 目录；WebApp 可直接通过官网访问： https://blackeagle.cozyai.chat/ 。
 
 所有客户端均采用**自带密钥 (BYOK)**模式，您只需配置自己的大模型API Endpoint和Key即可开始使用。无账户，不追踪，完全控制。
 
