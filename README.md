@@ -18,16 +18,20 @@ Our core vision is to provide you with an AI workflow that is **accessible anywh
 
 The BlackEagle ecosystem includes three core products that can operate independently or evolve together to complete complex automation tasks previously unimaginable.
 
-### 1. 🦅 **BlackEagle WebApp: Your Cloud-Based AI Command Center**
+### 1. 🦅 **BlackEagle Web Control Center: Unified Management & Remote Orchestration**
 
-> **Positioning:** A one-stop, powerful online agent platform designed for team collaboration and complex content generation.
+> **Positioning:** More than a powerful online agent platform, it is your **personal agent control center** for unified management, remote orchestration, and seamless "cloud-edge-local" collaboration.
 
 - **Core Abilities**:
-  - **Powerful Content Generation**: One-click generation of professional Word reports, PowerPoint presentations, and PDF documents.
-  - **Multimedia Processing Hub**: Supports text-to-image, image recognition (OCR), speech-to-text, and more.
-  - **Team Collaboration & Sharing**: Easily share AI-generated results with team members via a link.
-  - **Omnipotent Information Retrieval**: Integrates real-time web search, webpage parsing, geographic queries, and weather forecasts.
+  - **Unified Device Management**: Bind and manage desktop clients, browser extensions, and more from the web, enabling multi-device synergy.
+  - **Remote Task Dispatch**: Remotely assign tasks (web scraping, file processing, office automation, etc.) from the web, executed by local clients/extensions with real-time result feedback.
+  - **Real-Time Monitoring & Logs**: View device status, task progress, and history at any time; supports parallel devices and secure isolation.
+  - **Powerful Content & Multimedia Generation**: One-click generation of Word, PPT, PDF; supports text-to-image, OCR, speech-to-text, and more.
+  - **Omnipotent Information Retrieval**: Integrates web search, webpage parsing, document reading, geo & weather queries.
+  - **Collaboration & Sharing**: AI-generated results can be shared via link or social media, supporting team collaboration.
 - **How to Access**: [Enter directly from the official website](https://blackeagle.cozyai.chat/)
+
+> **With a "binding code" mechanism, users can bind desktop clients or browser extensions in one click from the web console, making the web the unified entry point for remote scheduling and management of local agents—achieving a true "cloud brain + local execution" closed loop.**
 
 ### 2. 💻 **BlackEagle Desktop Client: Your Exclusive Local AI Butler**
 
@@ -129,16 +133,20 @@ For the most complete AI experience, we recommend configuring the following type
 
 BlackEagle生态系统包含三大核心产品，它们既能独立作战，又能合体进化，完成过去无法想象的复杂自动化任务。
 
-### 1. 🦅 **BlackEagle WebApp：您的云端AI指挥中心**
+### 1. 🦅 **BlackEagle Web 控制中心：统一管理与远程调度的AI大脑**
 
-> **定位：** 一站式、功能强大的在线智能体平台，专为团队协作与复杂内容生成而生。
+> **定位：** 不仅是功能强大的在线智能体平台，更是您的**个人智能体控制中心**，实现“云-端-本地”一体化协作与远程管理。
 
 - **核心能力**:
-  - **强大的内容生成**：一键生成专业的Word报告、PPT演示文稿和PDF文档。
-  - **多媒体处理中心**：支持文生图、图片识别(OCR)、语音转文字等。
-  - **团队协作与分享**：轻松将AI生成的结果通过链接分享给团队成员。
-  - **全能信息获取**：集成实时网络搜索、网页解析、地理查询和天气预报。
+  - **统一设备管理**：通过网页端绑定和管理桌面客户端、浏览器插件等多种终端，实现多设备协同。
+  - **远程任务下发**：可在 Web 端远程下发任务（如网页采集、文件处理、自动化办公），由本地客户端/插件自动执行，结果实时回传。
+  - **实时监控与日志**：随时查看各终端设备的在线状态、任务进度与历史记录，支持多设备并行与安全隔离。
+  - **强大内容与多媒体生成**：一键生成 Word、PPT、PDF，支持文生图、图片识别（OCR）、语音转文字等。
+  - **全能信息获取**：集成网络搜索、网页解析、文档读取、地理与天气查询。
+  - **协作与分享**：AI生成结果可通过链接或社交媒体一键分享，支持团队协作。
 - **访问方式**: [直接从官网进入](https://blackeagle.cozyai.chat/)
+
+> **通过“绑定码”机制，用户可在 Web 控制台一键绑定桌面客户端或浏览器插件，Web 端成为统一入口，远程调度和管理本地智能体，实现“云端大脑+本地执行力”的闭环。**
 
 ### 2. 💻 **BlackEagle 桌面客户端：您的本地专属AI管家**
 
