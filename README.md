@@ -8,22 +8,22 @@
 
 # BlackEagle AI 🦅: Your Personalized AI Agent Matrix
 
-**BlackEagle AI is not a single tool, but an intelligent ecosystem composed of a web application, a desktop client, and a browser extension, designed to seamlessly integrate cutting-edge artificial intelligence into every moment of your work and creation.**
+**BlackEagle AI is not a single tool, but an intelligent ecosystem composed of a web application, a desktop client, a browser extension, and an Android client, designed to seamlessly integrate cutting-edge artificial intelligence into every moment of your work and creation.**
 
 Our core vision is to provide you with an AI workflow that is **accessible anywhere, private, and controllable**. Whether you are collaborating in the cloud, processing private data locally, or surfing the web in your browser—AI capabilities are at your fingertips.
 
 ---
 
-## ✨ The BlackEagle Agent Matrix: A Trinity, Each with Its Own Role
+## ✨ The BlackEagle Agent Matrix: Four-in-One, Each with Its Own Role
 
-The BlackEagle ecosystem includes three core products that can operate independently or evolve together to complete complex automation tasks previously unimaginable.
+The BlackEagle ecosystem includes four core products that can operate independently or evolve together to complete complex automation tasks previously unimaginable.
 
 ### 1. 🦅 **BlackEagle Web Control Center: Unified Management & Remote Orchestration**
 
 > **Positioning:** More than a powerful online agent platform, it is your **personal agent control center** for unified management, remote orchestration, and seamless "cloud-edge-local" collaboration.
 
 - **Core Abilities**:
-  - **Unified Device Management**: Bind and manage desktop clients, browser extensions, and more from the web, enabling multi-device synergy.
+  - **Unified Device Management**: Bind and manage desktop clients, browser extensions, and Android clients from the web, enabling multi-device synergy.
   - **Remote Task Dispatch**: Remotely assign tasks (web scraping, file processing, office automation, etc.) from the web, executed by local clients/extensions with real-time result feedback.
   - **Real-Time Monitoring & Logs**: View device status, task progress, and history at any time; supports parallel devices and secure isolation.
   - **Powerful Content & Multimedia Generation**: One-click generation of Word, PPT, PDF; supports text-to-image, OCR, speech-to-text, and more.
@@ -55,6 +55,17 @@ The BlackEagle ecosystem includes three core products that can operate independe
   - **Local-First & Secure**: Web content is not passed through third-party servers; users provide their own API Key.
 - **How to Download**: Download packages are available in this repository's `bin/` directory. The WebApp is accessible from the official website: https://blackeagle.cozyai.chat/
 
+### 4. 📱 **BlackEagle Android Client: Your Private Mobile AI Assistant**
+
+> **Positioning:** A local-first, hardware-hardened mobile AI agent. Bringing desktop-level productivity to any mobile scenario.
+
+- **Core Abilities**:
+  - **Extreme Privacy Protection**: Uses Android Keystore for hardware-encrypted storage of API keys; all chat history and documents remain on the device.
+  - **Full Visual & Document Capabilities**: Deeply extends AI vision with the camera; parses photos and documents (PDF/Word) on the fly.
+  - **Distributed Intelligent Node**: Operates as a "smart engine" that can be remotely dispatched by the Web Control Center.
+  - **One-click Professional Output**: Export summaries to Markdown, PDF, Notion, or Word seamlessly.
+- **How to Download**: Download the APK from [https://blackeagle.app887.com/BlackEaglev0.1.0.apk](https://blackeagle.app887.com/BlackEaglev0.1.0.apk)
+
 ---
 
 ## 🚀 Synergistic Work: Unleashing the True Power of the Ecosystem
@@ -82,7 +93,8 @@ The true power of BlackEagle lies in its ecosystem synergy. Here is a typical au
 ## 🚀 How to Get Started
 
 - **WebApp**: Simply visit [our website](https://blackeagle.cozyai.chat/) to get started.
-- **Desktop Client / Browser Extension**: Download packages are available in this repository's `bin/` directory. The WebApp is accessible from the official website: https://blackeagle.cozyai.chat/
+- **Desktop Client / Browser Extension**: Download packages are available in this repository's `bin/` directory.
+- **Android Client**: Download the APK from [https://blackeagle.app887.com/BlackEaglev0.1.0.apk](https://blackeagle.app887.com/BlackEaglev0.1.0.apk)
 
 All clients use a **Bring Your Own Key (BYOK)** model. You just need to configure your own large model API Endpoint and Key to start. No accounts, no tracking, complete control.
 
@@ -123,22 +135,22 @@ For the most complete AI experience, we recommend configuring the following type
 
 # BlackEagle AI 🦅：您的个人化AI智能体矩阵
 
-**BlackEagle AI 不是单一工具，而是一个由网页应用、桌面客户端和浏览器插件组成的智能生态系统，旨在将顶尖的人工智能无缝融入您的每一个工作与创作瞬间。**
+**BlackEagle AI 不是单一工具，而是一个由网页应用、桌面客户端、浏览器插件和安卓客户端组成的智能生态系统，旨在将顶尖的人工智能无缝融入您的每一个工作与创作瞬间。**
 
 我们的核心愿景是为您提供一个**随处可用、私密可控**的AI工作流。无论您身处何处——在云端协作、在本地处理私密数据，还是在浏览器中冲浪——AI能力都触手可及。
 
 ---
 
-## ✨ BlackEagle 智能体矩阵：三位一体，各司其职
+## ✨ BlackEagle 智能体矩阵：四位一体，各司其职
 
-BlackEagle生态系统包含三大核心产品，它们既能独立作战，又能合体进化，完成过去无法想象的复杂自动化任务。
+BlackEagle生态系统包含四大核心产品，它们既能独立作战，又能合体进化，完成过去无法想象的复杂自动化任务。
 
 ### 1. 🦅 **BlackEagle Web 控制中心：统一管理与远程调度的AI大脑**
 
 > **定位：** 不仅是功能强大的在线智能体平台，更是您的**个人智能体控制中心**，实现“云-端-本地”一体化协作与远程管理。
 
 - **核心能力**:
-  - **统一设备管理**：通过网页端绑定和管理桌面客户端、浏览器插件等多种终端，实现多设备协同。
+  - **统一设备管理**：通过网页端绑定和管理桌面客户端、浏览器插件、安卓客户端等多种终端，实现多设备协同。
   - **远程任务下发**：可在 Web 端远程下发任务（如网页采集、文件处理、自动化办公），由本地客户端/插件自动执行，结果实时回传。
   - **实时监控与日志**：随时查看各终端设备的在线状态、任务进度与历史记录，支持多设备并行与安全隔离。
   - **强大内容与多媒体生成**：一键生成 Word、PPT、PDF，支持文生图、图片识别（OCR）、语音转文字等。
