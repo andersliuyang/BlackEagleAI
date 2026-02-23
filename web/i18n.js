@@ -1700,3 +1700,28 @@
     }
   });
 })();
+
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector(".site-header");
+    var toggle = document.querySelector(".nav-toggle");
+    if (!header || !toggle) return;
+    toggle.addEventListener("click", function () {
+      var open = header.classList.toggle("nav-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function (e) {
+      if (header.classList.contains("nav-open") && !header.contains(e.target)) {
+        header.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    var navLinks = document.querySelectorAll(".top-nav a:not(.btn)");
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        header.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  });
+})();
