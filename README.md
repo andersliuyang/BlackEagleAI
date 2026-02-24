@@ -64,7 +64,7 @@ The BlackEagle ecosystem includes four core products that can operate independen
   - **Full Visual & Document Capabilities**: Deeply extends AI vision with the camera; parses photos and documents (PDF/Word) on the fly.
   - **Distributed Intelligent Node**: Operates as a "smart engine" that can be remotely dispatched by the Web Control Center.
   - **One-click Professional Output**: Export summaries to Markdown, PDF, Notion, or Word seamlessly.
-- **How to Download**: Download the APK from [https://blackeagle.app887.com/BlackEaglev0.1.0.apk](https://blackeagle.app887.com/BlackEaglev0.1.0.apk)
+- **How to Download**: Download the APK from [https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk](https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk)
 
 ---
 
@@ -94,7 +94,7 @@ The true power of BlackEagle lies in its ecosystem synergy. Here is a typical au
 
 - **WebApp**: Simply visit [our website](https://blackeagle.cozyai.chat/) to get started.
 - **Desktop Client / Browser Extension**: Download packages are available in this repository's `bin/` directory.
-- **Android Client**: Download the APK from [https://blackeagle.app887.com/BlackEaglev0.1.0.apk](https://blackeagle.app887.com/BlackEaglev0.1.0.apk)
+- **Android Client**: Download the APK from [https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk](https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk)
 
 All clients use a **Bring Your Own Key (BYOK)** model. You just need to configure your own large model API Endpoint and Key to start. No accounts, no tracking, complete control.
 
@@ -191,7 +191,7 @@ BlackEagle生态系统包含四大核心产品，它们既能独立作战，又�
   - **全能视觉与文档能力**：手机摄像头深度延伸 AI 视觉，即时解析相册图片、拍摄实物并输出报告，支持长文档识别总结。
   - **分布式智能节点**：作为可被 Web 端远程调度的“智能引擎”，执行跨设备的自动化任务。
   - **一键专业产出**：将对话摘要一键导出为 MD、PDF、Notion 页面或 Word 文档。
-- **下载方式**：请点击安装包链接下载：[https://blackeagle.app887.com/BlackEaglev0.1.0.apk](https://blackeagle.app887.com/BlackEaglev0.1.0.apk)
+- **下载方式**：请点击安装包链接下载：[https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk](https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk)
 
 ---
 

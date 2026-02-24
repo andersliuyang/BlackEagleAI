@@ -144,8 +144,6 @@
 
 官网:https://blackeagle.cozyai.chat/
 
-桌面版下载地址:https://blackeagle.app887.com/BlackEagleAI%20Setup%200.1.0.exe.zip
-
 网页版地址:https://app.cozyai.chat/blackeagle
 
 Microsoft Edge 插件商店已上线地址:
@@ -154,4 +152,8 @@ https://microsoftedge.microsoft.com/addons/detail/blackeagleai/nfnonndhjocfbdekd
 Google Chrome 插件商店已上线地址:
 https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb
 
-安卓版下载地址:https://blackeagle.app887.com/BlackEaglev0.1.0.apk
+安卓版下载地址:https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk
+
+浏览器插件下载地址:https://blackeagle.app887.com/blackeagle_extensions_v1.0.9.zip
+
+桌面版下载地址:https://blackeagle.app887.com/blackeagle_win_v0.1.1.exe
