@@ -152,9 +152,9 @@ https://microsoftedge.microsoft.com/addons/detail/blackeagleai/nfnonndhjocfbdekd
 Google Chrome 插件商店已上线地址:
 https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_source=item-share-cb
 
-安卓版下载地址:https://blackeagle.app887.com/blackeagle_android_v0.1.1.apk
+安卓版下载地址:https://blackeagle.app887.com/blackeagle_android_v0.1.3.apk
 
-浏览器插件下载地址:https://blackeagle.app887.com/blackeagle_extensions_v0.1.1.zip
+浏览器插件下载地址:https://blackeagle.app887.com/blackeagle_extensions_v0.1.2.zip
 
 桌面版下载地址:https://blackeagle.app887.com/blackeagle_win_v0.1.2.exe
 
