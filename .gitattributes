@@ -1,3 +1,4 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 bin/blackeagle_win_v0.1.1.exe filter=lfs diff=lfs merge=lfs -text
+bin/blackeagle_win_v0.1.2.exe filter=lfs diff=lfs merge=lfs -text
