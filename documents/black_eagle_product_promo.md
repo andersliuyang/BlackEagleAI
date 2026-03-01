@@ -156,6 +156,6 @@ https://chromewebstore.google.com/detail/hhmmanelkingboejoaelahnbpghhnmil?utm_so
 
 浏览器插件下载地址:https://blackeagle.app887.com/blackeagle_extensions_v0.1.2.zip
 
-桌面版下载地址:https://blackeagle.app887.com/blackeagle_win_v0.1.2.exe
+桌面版下载地址:https://blackeagle.app887.com/blackeagle_win_v0.1.3.exe
 
 安卓googleplay商店下载地址:https://play.google.com/store/apps/details?id=com.qzqstudio.blackeagleai
